@@ -1,0 +1,26 @@
+<!--common/components/dateLine/dateLine.wxml-->
+<view class='date-lineBox'>
+  <view 
+    class='date-line-prevBtn {{pClassName}}'
+    bindtap='onPrevClick'
+  ><view><text>前一天</text></view></view>
+  <view 
+      class='date-line-checkedDate'
+      bindtap='onCheckDate'
+  >   
+      <view>
+        <image 
+          mode="aspectFit"
+          src='{{imgDomain}}/images/dateTime@2x.png'
+          class='line-checkedDate-icon'
+         ></image>
+        <text>{{cDate}}</text>
+      </view>
+  </view>
+  <view 
+    class='date-line-nextBtn {{nClassName}}'
+    bindtap='onNextClick'
+  >
+  <view><text>后一天</text></view>
+  </view>
+</view>

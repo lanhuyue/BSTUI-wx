@@ -1,0 +1,31 @@
+/* common/components/BSTcheckbox/BSTcheckbox.wxss */
+.checkbox{
+  width:auto;
+  white-space: nowrap;
+  display: inline-block;
+}
+.checkbox-icon{
+  display: inline-block;
+  vertical-align: middle;
+  width: 30rpx;
+  height: 30rpx;
+}
+.checkbox-icon .image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.checkbox-icon-disabled::after{
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.7);
+  margin: -100% 0 0 0;
+}
+.checkbox-content{
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 40rpx;
+  margin-left: -30rpx;
+}

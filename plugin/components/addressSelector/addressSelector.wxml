@@ -1,0 +1,87 @@
+<!--common/components/addressSelector/addressSelector.wxml-->
+<flexBox start="110rpx" vertical="{{true}}" class='address-box'>
+    <!-- 搜索输入框 -->
+    <view slot="start" class='address-search-box'>
+        <image src='{{imgDomain}}/images/search-cion.png'></image>
+        <input type='text' bindinput='onInput' cursor="{{60}}" placeholder='{{placeholder}}'></input>
+    </view>
+    <view slot="end" class='address-content-box'>
+        <!-- 默认选择内容 -->
+        <scroll-view 
+            scroll-with-animation="{{true}}" 
+            scroll-into-view="{{scrollID}}"
+            scroll-y="{{true}}"
+            class='address-checked-listbox noScrollBar' 
+            hidden='{{checkedListIsHide}}'
+        >
+             <view class='address-content-line'>
+                <text>当前定位城市</text>
+                <view class='line-content now-city' bindtap='onPointCityClick'>
+                  <view><text>{{currentData.label}}</text><text>{{currentData.addressNo?"GPS定位":"定位失败"}}</text></view>
+                </view>
+            </view>
+              <view class='address-content-line' wx:if="{{historyData.length>0}}">
+                <text>历史搜索</text>
+                <view class='line-content'>
+                  <block wx:for="{{historyData}}" wx:key="_ahi_{{index}}">
+                      <view data-address='{{item}}' bindtap='onAddressClick'>{{item[labelKey]}}</view>{{" "}}
+                  </block>
+                  <block wx:for="{{4-historyData.length%3}}" wx:key="_*hi_{{index}}">
+                      <i></i>{{" "}}
+                  </block>
+                </view>
+            </view> 
+             <view class='address-content-line' wx:if="{{hotData.length>0}}">
+                <text>热门</text>
+                <view class='line-content'>
+                  <block wx:for="{{hotData}}" wx:key="_aho_{{index}}">
+                     <view data-address='{{item}}'bindtap='onAddressClick'>{{item[labelKey]}}</view>{{" "}}
+                  </block>
+                   <block wx:for="{{4-hotData.length%3}}" wx:key="_*ho_{{index}}">
+                      <i></i>{{" "}}
+                  </block>
+                </view>
+            </view>
+            <!-- 键盘 -->
+            <view class='address-keyboard' id="keyboard">
+              <block wx:for="{{keyboardData}}" wx:key="_ak_{{index}}">
+                  <view
+                      data-key='{{item}}'
+                      class="{{item.className}}"
+                      bindtap='onKeyboardClick'
+                  >{{item.key}}</view>{{" "}}
+              </block>
+              <block wx:for="{{7-keyboardData.length%6}}" wx:key="_*ak_{{index}}">
+                      <i></i>{{" "}}
+              </block>
+            </view>
+            <!-- 键盘搜索内容 -->
+            <view class='checked-list-searchBox'>
+              <view 
+              wx:for="{{searchData_p}}" 
+              wx:key="_cls_{{index}}" 
+              data-address='{{item}}'
+              bindtap='onAddressClick'
+              ><text>{{item[labelKey]}}</text><text>{{item.parentRegion||""}}</text></view>
+            </view>   
+        </scroll-view>
+        <!-- 搜索内容 -->
+        <view
+            class='address-search-listbox {{(searchData_s.length==0)&&"nbgc"}}  noScrollBar'
+            hidden='{{searchListIsHide}}'
+         >
+          <view
+              wx:for="{{searchData_s}}" 
+              wx:key="_sll_{{index}}" 
+              data-address='{{item}}'
+              class='{{item.className||""}}'
+              bindtap='onAddressClick'
+          ><text>{{item[labelKey]}}</text><text>{{item.parentRegion||""}}</text></view>
+          <!-- 无数据提示 -->
+          <view hidden='{{searchData_s.length>0}}'>
+              <image src='{{imgDomain}}/images/bottomBanner.png' style='width:319rpx;height:267rpx;margin:0 auto;display:block;'></image>
+              <view style='text-align:center;color:#9b9b9b;'>没有您所搜索的数据</view>
+          </view>
+        </view>
+    </view>
+</flexBox>

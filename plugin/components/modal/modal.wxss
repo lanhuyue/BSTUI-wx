@@ -1,0 +1,60 @@
+/* common/components/modal/modal.wxss */
+.modal-box{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+}
+.modal-mask{
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0,0,0,0.5); 
+  /* transition: all 0.3s ease-in; */
+}
+.modal-body{
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1.5,1.5);
+  background-color: white;
+  border-radius: 8rpx;
+  opacity: 0;
+  /* transition: all 0.3s ease-out; */
+}
+.modal-body .view{
+  white-space: nowrap;
+}
+
+.modal-drawer-bottom{
+    top: 100%;
+    width: 100%;
+    transform: translate(-50%, 0) scale(1,1);
+    border-radius: 0;
+    opacity: 1;
+}
+.modal-drawer-top{
+    top:auto;
+    bottom: 100%;
+    width: 100%;
+    transform: translate(-50%, 0) scale(1,1);
+    border-radius: 0;opacity: 1;
+}
+.modal-drawer-right{
+    left: 100%;
+    height: 100%;
+    width: auto;  
+    transform: translate(0, -50%) scale(1,1);
+     border-radius: 0;opacity: 1;
+}
+.modal-drawer-left{
+    left: auto;
+    right: 100%;
+    height: 100%;
+    width: auto; 
+    transform: translate(0, -50%) scale(1,1);
+    border-radius: 0;opacity: 1;
+}

@@ -1,0 +1,16 @@
+<!--common/components/drawer/drawer.wxml-->
+<view class='view drawer-box {{className}}' style='{{componentStyle}}'>
+  <view class='view drawer-title' bindtap='onTitleClick' style='{{titleStyle}}'>
+      <view class='view drawer-title-content'><slot name='title'></slot></view>
+      <view class='view drawer-title-icon'>
+          <view class="direction-icon-right" animation="{{titleAnimation}}"></view>
+      </view>
+  </view>
+  <view
+   class='view drawer-content {{isOpen&&"overYAuto"}}' 
+   style='{{contentStyle}}'
+   animation="{{contentAnimation}}"
+   >
+    <view class="view" id='contentBox'><slot name='content'></slot></view>
+   </view>
+</view>

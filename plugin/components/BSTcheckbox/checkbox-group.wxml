@@ -1,0 +1,3 @@
+<!--common/components/BSTcheckboxGroup/BSTcheckboxGroup.wxml-->
+<view><slot></slot></view>
+

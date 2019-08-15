@@ -1,0 +1,19 @@
+<!--plugin/components/SDrawer/SDrawer.wxml-->
+<view 
+    class='s-drawer-box' 
+    id='box'
+    hidden='{{boxHidden}}'
+    style='height:{{boxHeight}}px'
+    bindtouchstart='onstart'
+    catchtouchmove='onmove'
+    catchtouchend='onend'
+>
+  <view 
+    class='s-drawer-content'
+    style='margin-left:{{contentTranslateX}};transition:{{animation}}'
+  ><slot></slot></view>
+  <view class='s-drawer-hidden' style='{{hiddenStyle}};width:{{hiddenWidth}};line-height:{{boxHeight}}px'>
+    <view class='s-drawer-hidden-btn' wx:if='{{!customHidden}}' bindtap='onclick'>{{hiddenValue}}</view>
+    <slot wx:else name='hidden'></slot>
+  </view>
+</view>

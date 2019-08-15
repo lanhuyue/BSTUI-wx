@@ -1,0 +1,56 @@
+/* common/components/tab/tab.wxss */
+.tab-box{
+  overflow: hidden;
+}
+.tab-title,.tab-content{
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+.tab-title{
+  background-color: white;
+  position: relative;
+  /* overflow-x: scroll; */
+  box-shadow: inset 0 -4rpx 0 0 #eee;
+}
+.tab-title::-webkit-scrollbar{
+  height: 0;
+}
+.title-button{
+  display: inline-block;
+  padding: 20rpx 10rpx;
+  transition: all 0.2s ease-out;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+.title-button:active{
+  background-color: #eee;
+}
+.title-button-checked{
+  /* background-color: #eee; */
+}
+.tab-body{
+   white-space: nowrap;
+   width: auto;
+   height: 100%;
+   transform: translateX(0);
+   transition: transform 0.2s ease-out;
+}
+.title-line{
+  height: 4rpx;
+  background-color: orange;
+  transition: transform 0.2s ease-out;
+}
+.title-botton-cion{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.title-botton-text{
+  vertical-align: middle;
+}

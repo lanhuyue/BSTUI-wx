@@ -1,0 +1,9 @@
+<!--plugin/components/Cheader/Cheader.wxml-->
+<view class='view bst-nav-bar' style='{{_boxStyle}}'>
+  <view wx:if='{{!noBack}}' class='view bst-nav-left' style='{{leftStyle}}' bindtap='navback'>
+    <view class='bst-nav-lefticon' style='border-color:{{iconColor}}'></view>
+  </view>
+  <view class='view bst-nav-center' style='{{centerStyle}}'>
+    <slot></slot>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--miniprogram/pages/page2/page2.wxml-->
+<Cheader
+    boxStyle='color:#fff;background-color:#157CF0'
+    bindback='back'
+  >page2</Cheader>

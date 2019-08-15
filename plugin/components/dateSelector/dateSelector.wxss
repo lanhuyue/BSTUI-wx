@@ -1,0 +1,74 @@
+/* plugin/components/dateSelector/dateSelector.wxss */
+flexBox{
+  height: 100%;width: 100%;
+}
+/* .date-cancel,.date-sure{ */
+.date-selector .button{
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 10rpx 30rpx;
+  background-color: orange;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  color: white;
+  border-radius: 8rpx;
+  width: 120rpx;
+  vertical-align: middle;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  /* height: 100%; */
+}
+.date-selector .button::after{
+  border: none;
+}
+.date-selector date-cancel:active{
+  background-color: rgb(165, 205, 218)
+}
+.date-selector .date-sure:active{
+  background-color: rgb(255, 136, 0)
+}
+.date-selector .date-cancel{
+  margin-right: -150rpx;
+  color: #999;
+  background-color: #DCEAFB;
+}
+.date-selector .date-sure{
+  margin-left: -150rpx;
+  /* margin-right: 10rpx; */
+}
+.date-title{
+  vertical-align: middle;
+  width: 100%;
+  padding: 0 160rpx;
+  display: inline-block;
+  background-color: transparent;
+  text-align: center;
+}
+.view{
+  box-sizing: border-box;
+}
+.more-operation{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color:rgba(255,255,255,0.9);
+  z-index: 99999;
+  box-shadow: 10rpx 0 10rpx rgba(0, 0, 0,0.2);
+  transform: translateX(-120%);
+  padding: 30rpx 0;
+}
+.more-operation .button{
+  display: block;
+  background-color: white;
+  color: #999;
+  border: 1rpx solid rgb(212, 211, 211);
+  border-radius: 50%;
+  line-height: 110rpx;
+  width: 110rpx;
+  height: 110rpx;
+}
+.more-operation .button:active{
+  background-color: #eee;
+}

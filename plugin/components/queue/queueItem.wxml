@@ -1,0 +1,4 @@
+<!--plugin/components/queue/queueItem.wxml-->
+<block>
+    <view class='queue-item {{type}}-item' style='{{itemStyle||""}}' ><slot></slot></view>{{type=="equipartition"?" ":""}}
+</block>

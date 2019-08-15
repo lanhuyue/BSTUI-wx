@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "count": "plugin://BSTCommon/count"
+  },
+  "navigationBarTitleText": "count"
+}

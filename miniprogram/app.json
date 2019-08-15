@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jsapi/jsapi",
+    "pages/cssapi/index",
+    "pages/index/components/Cheader/index",
+    "pages/index/components/coder/index",
+    "pages/index/components/modal/index",
+    "pages/index/components/dialog/index",
+    "pages/index/components/dateSelector/index",
+    "pages/index/components/count/index",
+    "pages/index/components/drawer/index",
+    "pages/index/components/STBox/index",
+    "pages/index/components/Cslider/index",
+    "pages/index/components/Ctab/index",
+    "pages/index/components/Cinput/index",
+    "pages/index/components/LSDrawer/index",
+    "pages/index/components/flexBox/index",
+    "pages/index/components/calendar/index",
+    "pages/index/components/queue/index",
+    "pages/index/components/button/index",
+    "pages/index/components/fontIcon/index",
+    "pages/cssapi/components/label/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat"
+  },
+  "plugins": {
+    "BSTCommon": {
+      "version": "dev",
+      "provider": "wx3f99db061dbc1dd3"
+    }
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#4FA4F9",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "iconPath": "/images/component_d.png",
+        "selectedIconPath": "/images/component_c.png",
+        "pagePath": "pages/index/index",
+        "text": "components"
+      },
+      {
+        "iconPath": "/images/api_d.png",
+        "selectedIconPath": "/images/api_c.png",
+        "pagePath": "pages/jsapi/jsapi",
+        "text": "JSAPI"
+      },
+      {
+        "iconPath": "/images/css_c.png",
+        "selectedIconPath": "/images/css_d.png",
+        "pagePath": "pages/cssapi/index",
+        "text": "CSSAPI"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

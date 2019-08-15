@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "dateSelector": "plugin://BSTCommon/dateSelector"
+  },
+  "navigationBarTitleText": "dateSelector"
+}

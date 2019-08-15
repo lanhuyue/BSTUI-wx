@@ -1,0 +1,15 @@
+<!--common/components/flexBox/flexBox.wxml-->
+<view class='flex-box {{vertical?"flex-box-v":""}} {{className}}' style='{{componentStyle}}'>
+	  <view 
+	    class='view {{startClass}}'
+	    style='{{startStyle}}'
+	  >
+	  		<slot name='start'></slot>
+	  </view>
+  	<view
+    	class='view {{endClass}}'
+    	style='{{endStyle}}'
+  	>
+  	  	<slot name='end'></slot>
+	</view>
+</view>

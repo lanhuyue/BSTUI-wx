@@ -1,0 +1,24 @@
+<!--pages/index/components/Cheader/index.wxml-->
+<view>
+<Cheader
+    boxStyle='{{headerStyle}}'
+    bindback='onback'
+     centerStyle='font-weight: normal'
+>我是自定义导航</Cheader>
+<image src="{{imageDomain}}BSTCommonBannernew3.png" mode='aspectFill' style="height:430rpx"></image>
+<view style="padding:20rpx">
+  <view class="card">
+      <view class="card-title">动态设置header</view>
+        <view class="card-content">
+            <button 
+              wx:for='{{list}}' 
+              wx:key='b_{{index}}'
+              bindtap="onclick"
+              data-index="{{index}}"
+            >{{item.label}}</button>
+        </view>
+      </view>
+  </view>
+ 
+</view>
+

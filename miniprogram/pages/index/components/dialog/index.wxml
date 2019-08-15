@@ -1,0 +1,50 @@
+<!--pages/index/components/dialog/index.wxml-->
+<view class="container">
+  <view class="card">
+      <view class="card-title">wxml模板调用</view>
+      <view class="card-content">
+          <button bindtap="showdialog" data-index="1">save</button>
+          <button bindtap="showdialog" data-index="2">save\cancel</button>
+      </view>
+  </view>
+  <view class="card">
+      <view class="card-title">js对象调用</view>
+      <view class="card-content">
+          <editor
+            id="editor"
+            class="d-textarea"
+            showImgSize
+            showImgToolbar
+            showImgResize
+            bindinput="ontextareaInput"
+            bindready="onEditorReady"
+            >
+          </editor>
+          <!-- <textarea
+            value="{{textareavalue}}"
+            bindinput='ontextareaInput'
+            placeholder='请输入js实例dialog内容，可以为HTML字符串'
+            class="d-textarea"
+          /> -->
+          <button bindtap="showdialog" data-index="3">show dialog</button>
+      </view>
+  </view>
+  <dialog 
+    show='{{dialogShow1}}'
+    save='我知道了'
+    bindhide='hidedialog'
+    data-index="1"
+  >
+    <view  class="content"> 我是弹窗1，目前只有一个save按钮</view>
+    
+  </dialog>
+   <dialog 
+    show='{{dialogShow2}}'
+    save='返回下一页'
+    cancel='留在这'
+    bindhide='hidedialog'
+    bindsaveCallback='ondialog2click'
+    data-index="2"
+  ><view class="content">我是弹窗2，有两个按钮，可以返回上一页</view></dialog>
+  <dialog bindexamplePipe='ondialog3examplePipe' />
+</view>

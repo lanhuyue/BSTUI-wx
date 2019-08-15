@@ -1,0 +1,13 @@
+/* miniprogram/pages/index/components/flexBox/index.wxss */
+.start{
+  background-color: rgb(46, 161, 255);
+  color: white;
+}
+.start,.end{
+  padding: 20rpx;
+  height: 100%;
+}
+.end{
+   background-color: rgb(46, 213, 255);
+  color: white;
+}

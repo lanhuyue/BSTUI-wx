@@ -1,0 +1,37 @@
+<!--pages/index/components/STBox/index.wxml-->
+<view class="container" style="background-image:url({{imageDomain}}BSTCommonBannernew3.png)">
+  <Cheader
+    boxStyle='{{headerStyle}}'
+    bindback='onback'
+    bindexamplePipe='oncheaderload'
+  >滚动吸顶</Cheader>
+  <STBox>
+    <view class="card" style="margin-top:{{headerHeight}}px">
+        <view class="card-title">地主1</view>
+        <view class="card-content" style="height:300rpx">
+          我不管，这底盘是我的
+        </view>
+    </view>
+    <STItem
+      boxStyle='margin-bottom:20rpx'
+      triggerOffset='{{headerHeight}}'
+      STStyle='background:rgba(28,85,136,0.8);color:#fff;left:0;width:100%;border-radius:0'
+      bindST='onSTitemchange'
+    >
+      <dateSelector bindchange='ondatechange'>
+        <flexBox start='60rpx' componentStyle='padding:20rpx'>
+          <image slot='start' style="height:60rpx;width:100%" src="{{imageDomain}}tz_header_icon.png" />
+          <view slot='end' class="date-btn">{{date?date:'请选择日期'}}</view>
+        </flexBox>
+      </dateSelector>
+    </STItem>
+    <view class="card">
+        <view class="card-title">地主2</view>
+        <view class="card-content" style="height:1500rpx">
+          我不管，这底盘是我的
+        </view>
+    </view>
+  </STBox>
+  <!-- <image src="{{imageDomain}}BSTCommonBannernew.png" mode='aspectFill' style="height:430rpx"></image> -->
+
+</view>

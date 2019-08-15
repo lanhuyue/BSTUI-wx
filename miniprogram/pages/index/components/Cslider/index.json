@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Cslider": "plugin://BSTCommon/Cslider",
+    "flexBox": "plugin://BSTCommon/flexBox"
+  },
+  "navigationBarTitleText": "Cslider"
+}

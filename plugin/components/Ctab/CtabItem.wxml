@@ -1,0 +1,2 @@
+<!--plugin/components/Ctab/CtabItem.wxml-->
+<view class='tab-item' style='{{itemStyle}}'><slot></slot></view>

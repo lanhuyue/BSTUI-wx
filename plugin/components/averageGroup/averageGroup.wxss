@@ -1,0 +1,35 @@
+/* plugin/components/averageGroup/averageGroup.wxss */
+.bst-ag-box{
+  width: 100%;
+  text-align: justify;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.bst-ag-box::after{
+  content: " ";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+}
+.bst-ag-box .view{
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 26px;
+    padding: 8px 0;
+    margin-bottom: 20px;
+}
+.bst-ag-line{
+    width: 100%;
+    height: 0;
+}
+.bst-ag-box .tance{
+  display: inline-block;
+}
+.bst-ag-box .tance:last-child{
+  width: 100%;
+  height: 0;
+}

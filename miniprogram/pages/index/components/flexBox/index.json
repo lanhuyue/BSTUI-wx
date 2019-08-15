@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "flexBox": "plugin://BSTCommon/flexBox"
+  },
+  "navigationBarTitleText": "flexBox"
+}

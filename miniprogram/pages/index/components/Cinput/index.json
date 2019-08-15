@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Cinput": "plugin://BSTCommon/Cinput"
+  },
+  "navigationBarTitleText": "Cinput"
+}

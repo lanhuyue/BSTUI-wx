@@ -1,0 +1,61 @@
+<!--plugin/components/BSTbutton/button.wxml BST-button-{{type}}-->
+<view class="BSTbutton  {{disabled?'button-disabled-'+type:''}} {{isShadow?'buttonShadow-'+type:''}}" 
+  style=" border:{{der}};width:{{width}}rpx;height:{{height}}rpx;line-height:{{height}}rpx; font-size:{{size}}rpx;border-radius:{{round?height/2:8}}rpx;color:{{FontColor}}; background:{{bgColor}};">
+  <view class="BSTbutton-wap">
+      <view wx:if='{{IconConfig.position=="left"}}'>
+        <view
+          wx:if='{{IconConfig.type=="fontIcon"}}'
+          style='height:{{height}}rpx;line-height:{{height}}rpx;'
+  
+        >
+          <BSTicon  wx:if='{{IconConfig.position=="left"}}'  
+          className='{{IconConfig.iconType}}'
+          size='{{IconConfig.Size}}'
+           color='{{IconConfig.color}}'
+          />
+        </view>
+
+        <view 
+          wx:if='{{IconConfig.type=="urlIcon"}}'
+          style="width:{{IconConfig.sourceSise[0]}}rpx;height:{{height}}rpx;line-height:{{height}}rpx;background:url({{IconConfig.source}}) no-repeat center;background-size:{{IconConfig.sourceSise[0]}}rpx {{IconConfig.sourceSise[1]}}rpx "
+        ></view>  
+        <icon 
+        wx:if='{{IconConfig.type=="wxIcon"}}'
+        type="{{IconConfig.iconType}}" 
+        size="{{IconConfig.Size}}" 
+        color="{{IconConfig.color}}"
+        style="height:{{height}}rpx;line-height:{{height}}rpx;display:flex; justify-content: center;align-items:center;"/>
+      </view> 
+      <view 
+        wx:if='{{!!text}}'
+      style="padding-{{IconConfig.position}}:{{IconConfig.spacing}}rpx" >
+          {{text}} 
+      </view>
+
+      <view wx:if='{{IconConfig.position=="right"}}'>
+        <view
+          wx:if='{{IconConfig.type=="fontIcon"}}'
+          style='height:{{height}}rpx;line-height:{{height}}rpx;'
+  
+        >
+           <BSTicon wx:if='{{IconConfig.position=="right"}}'
+           className='{{IconConfig.iconType}}'
+            size='{{IconConfig.Size}}'
+           color='{{IconConfig.color}}'
+           />
+        </view>
+
+        <view 
+          wx:if='{{IconConfig.type=="urlIcon"}}'
+          style="width:{{IconConfig.sourceSise[0]}}rpx;height:{{height}}rpx;line-height:{{height}}rpx;background:url({{IconConfig.source}}) no-repeat center;background-size:{{IconConfig.sourceSise[0]}}rpx {{IconConfig.sourceSise[1]}}rpx "
+        ></view>  
+         <icon 
+          wx:if='{{IconConfig.type=="wxIcon"}}'
+         type="{{IconConfig.iconType}}" 
+         size="{{IconConfig.Size}}" 
+         color="{{IconConfig.color}}"
+         style="height:{{height}}rpx;line-height:{{height}}rpx;display:flex; justify-content: center;  align-items: center;" />
+      </view> 
+  </view>
+</view>
+ <!-- <view><icon type="success" size="20"/></view> -->

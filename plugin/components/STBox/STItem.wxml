@@ -1,0 +1,15 @@
+<!--plugin/components/STBox/STItem.wxml-->
+
+<view 
+  id='box'
+  class='bst-abiten-box'
+  style='{{boxStyle}}'
+>
+  <view
+    id='body'
+    class='bst-abiten-body'
+    style='{{bodyStyle}}'
+  >
+    <slot></slot>
+  </view>
+</view>

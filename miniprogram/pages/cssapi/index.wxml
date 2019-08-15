@@ -1,0 +1,20 @@
+<!--miniprogram/pages/cssapi/cssapi.wxml-->
+<view>
+  <Cheader
+    leftStyle='display:none'
+    boxStyle='background-image: linear-gradient(to right, #4FA4F9 , #356DA6);color:#fff'
+  >CSSAPI</Cheader>
+  <image src="{{imageDomain}}BSTCommonBannernew1.png" mode='aspectFill' style="height:430rpx"></image>
+  <queue
+    class="list"
+    type='equipartition'
+    itemStyle='width:46%'
+  >
+    <queueItem wx:for='{{componentsRouter}}' wx:key='c_{{index}}'>
+      <navigator class="c-item" url='/pages/cssapi/components/{{item.name}}/index' >
+        <view class="c-item-title"><text>{{item.name}}</text></view>
+        <view class="c-item-content">{{item.introduce}}</view>
+      </navigator>
+    </queueItem>
+  </queue>
+  </view>

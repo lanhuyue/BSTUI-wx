@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "dialog": "plugin://BSTCommon/dialog"
+  },
+  "navigationBarTitleText": "dialog"
+}

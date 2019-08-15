@@ -1,0 +1,9 @@
+<!--plugin/components/queue/queue.wxml-->
+<view class='queue-box queue-{{type}}' style='{{boxStyle}}' id='qBox'>
+  <slot></slot>
+  <block 
+    wx:if='{{type=="equipartition"}}'
+    wx:for="{{column-listNum%column}}" 
+    wx:key="_*hi_{{index}}"
+  ><i class='tance' style='{{tanceStyle}}'></i>{{" "}}</block>
+</view>

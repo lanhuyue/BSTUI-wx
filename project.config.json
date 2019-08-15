@@ -1,0 +1,56 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"pluginRoot": "plugin/",
+	"compileType": "plugin",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wx3f99db061dbc1dd3",
+	"projectname": "BSTCommon",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"libVersion": "2.7.7",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/index/components/button/index",
+					"pathName": "pages/index/components/button/index",
+					"scene": null
+				}
+			]
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

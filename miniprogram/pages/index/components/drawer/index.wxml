@@ -1,0 +1,27 @@
+<!--pages/index/components/drawer/index.wxml-->
+<view class="container">
+  <view class="card">
+      <view class="card-title">默认状态</view>
+      <view class="card-content">
+          <drawer 
+              componentStyle='border:1rpx solid #eee; border-radius: 8rpx'
+          >
+            <view slot='title'>title</view>
+            <view slot='content' style="padding:20rpx">这个就是内容,后续拓展类型，敬请期待</view>>
+          </drawer>
+      </view>
+  </view>
+  <view class="card">
+      <view class="card-title">switch=true;iconRotate=['135','-45']</view>
+      <view class="card-content">
+          <drawer 
+              switch='{{true}}'
+              iconRotate='{{["135","-45"]}}'
+              componentStyle='border:1rpx solid #eee; border-radius: 8rpx'
+          >
+            <view slot='title'>title</view>
+            <view slot='content' style="padding:20rpx">这个就是内容,后续拓展类型，敬请期待</view>>
+          </drawer>
+      </view>
+  </view>
+</view>

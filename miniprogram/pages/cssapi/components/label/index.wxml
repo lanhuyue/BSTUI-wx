@@ -1,0 +1,33 @@
+<!--miniprogram/pages/index/components/label/label.wxml-->
+<view class="label-title">标签基础样式</view>
+<view class="label-box">
+  <view class="BTS-label-default BTS-label-default-bg1">标签</view>
+  <view class="BTS-label-default BTS-label-default-bg2">标签</view>
+  <view class="BTS-label-default BTS-label-default-bg3">标签</view>
+  <view class="BTS-label-default BTS-label-default-bg4">标签</view>
+  <view class="BTS-label-default BTS-label-default-bg5">标签</view>
+</view>
+<view class="label-title">标签空心样式</view>
+<view class="label-box">
+  <view class="BTS-label-default BTS-label-box1">标签</view>
+  <view class="BTS-label-default BTS-label-box2">标签</view>
+  <view class="BTS-label-default BTS-label-box3">标签</view>
+  <view class="BTS-label-default BTS-label-box4">标签</view>
+  <view class="BTS-label-default BTS-label-box5">标签</view>
+</view>
+<view class="label-title">标签透明度样式</view>
+<view class="label-box">
+  <view class="BTS-label-default BTS-label-opacity1">标签</view>
+  <view class="BTS-label-default BTS-label-opacity2">标签</view>
+  <view class="BTS-label-default BTS-label-opacity3">标签</view>
+  <view class="BTS-label-default BTS-label-opacity4">标签</view>
+  <view class="BTS-label-default BTS-label-opacity5">标签</view>
+</view>
+<view class="label-title">其他标签</view>
+<view class="label-box">
+  <view class="BTS-label-red">新线路</view>
+  <view class="BTS-label-choose">达州-重庆</view>
+  <view class="BTS-label-choose active">达州-渠县</view> 
+  <view class="BTS-label-beveling green">标签</view>
+  <view class="BTS-label-beveling gray">标签</view>
+</view>

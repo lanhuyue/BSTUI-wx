@@ -1,0 +1,11 @@
+/* plugin/components/STBox/STItem.wxss */
+.bst-abiten-box{
+  width: 100%;
+  box-sizing: border-box;
+}
+.bst-abiten-body{
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    transition: background 0.2s ease-out;
+}

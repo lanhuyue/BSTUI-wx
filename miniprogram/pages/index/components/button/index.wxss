@@ -1,0 +1,25 @@
+/* miniprogram/pages/index/components/button/index.wxss */
+.button-item{
+  display: flex;
+  justify-content: center;
+  padding-bottom:40rpx; 
+  width: 100%; 
+}
+
+.button-item .text{
+  font-size:26rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(155,155,155,1);
+  line-height:36rpx;
+  padding-bottom: 30rpx;
+}
+.inner-buttou-box{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;  
+}
+.button-item2>view{
+ width: 686rpx; 
+  
+}

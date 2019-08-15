@@ -1,0 +1,6 @@
+/* miniprogram/pages/index/components/Ctab/index.wxss */
+.c-content{
+  padding: 20rpx;
+  box-sizing: border-box;
+  color: rgb(61, 60, 60);
+}

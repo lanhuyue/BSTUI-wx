@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Ctab": "plugin://BSTCommon/Ctab",
+    "CtabItem": "plugin://BSTCommon/CtabItem"
+  },
+  "navigationBarTitleText": "Ctab/CtabItem"
+}

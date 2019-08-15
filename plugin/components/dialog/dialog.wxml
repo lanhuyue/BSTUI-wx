@@ -1,0 +1,27 @@
+<!--common/components/dialog/dialog.wxml-->
+<modal 
+    type='dialog' 
+    show='{{isShow}}'
+    bindhide='onHide'
+    noMaskEvnet='{{noMaskEvnet}}'
+    bodyStyle='{{bodyStyle}}'
+>
+    <slot></slot>
+    <rich-text 
+            hidden='{{!apiSetContentShow}}'
+            class='setContent-box'
+            nodes='{{setContent}}'
+    ></rich-text>
+    <!-- <view wx:if='{{setContent}}' class='setContent-box'>{{setContent}}</view> -->
+    <view slot='footer' class='dialog-footer'>
+      <button 
+        class='button {{!cancel?"only-save":""}}' 
+        open-type='{{openType}}'
+        bindtap='onSaveClick'
+        bindgetuserinfo='onSaveClick'
+        bindgetphonenumber='onSaveClick'
+        style='{{saveStyle}}'
+      >{{save||"确定"}}</button>
+      <button class="button" wx:if='{{cancel}}' bindtap='onCancelClick' style='{{cancelStyle}}'>{{cancel||"取消"}}</button>
+    </view>
+</modal>

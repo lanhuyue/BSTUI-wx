@@ -1,0 +1,16 @@
+/* pages/index/components/dialog/index.wxss */
+.d-textarea{
+  background-color: #eee;
+  width: 100%;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+   margin-bottom: 20rpx;
+}
+.content{
+  padding: 40rpx 20rpx;
+}
+button{
+  margin-bottom: 20rpx;
+  
+}

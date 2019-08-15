@@ -1,0 +1,5 @@
+<!--pages/jsapi/jsapi.wxml-->
+
+<view>
+<image src="{{imageDomain}}BSTCommonBannernew3.png" mode='aspectFill' style="height:430rpx"></image>
+</view>

@@ -1,0 +1,42 @@
+<!--miniprogram/pages/index/components/Cinput/index.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="card-title">含有头部icon、清除icon</view>
+    <view class="card-content">
+        <Cinput
+          startIconType='search'
+          startIconColor='orange'
+          clearColor='#999'
+        />
+    </view>
+  </view>
+  <view class="card">
+    <view class="card-title">只含有头部icon</view>
+    <view class="card-content">
+        <Cinput
+          startIconType='download'
+          startIconColor='#8BC34A'
+          type='number'
+        />
+    </view>
+  </view>
+  <view class="card">
+    <view class="card-title">只含有清除icon</view>
+    <view class="card-content">
+        <Cinput
+          clearColor='#ff6000'
+          type='idcard'
+        />
+    </view>
+  </view>
+  <view class="card">
+    <view class="card-title">自定义头部icon</view>
+    <view class="card-content">
+        <Cinput
+          startIconURL='{{imageDomain}}weixin.png'
+          clearColor='#ff6000'
+          type='idcard'
+        />
+    </view>
+  </view>
+</view>

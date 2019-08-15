@@ -1,0 +1,8 @@
+/* miniprogram/pages/index/components/calendar/index.wxss */
+.tips{
+  font-size: 26rpx;
+  color: orange;
+  background-color: #CFE4F9;
+  padding: 20rpx;
+  border-radius: 8rpx;
+}

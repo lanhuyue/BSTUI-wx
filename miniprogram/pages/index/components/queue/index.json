@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "Cslider": "plugin://BSTCommon/Cslider",
+    "flexBox": "plugin://BSTCommon/flexBox",
+    "queue": "plugin://BSTCommon/queue",
+    "queueItem": "plugin://BSTCommon/queueItem"
+  },
+  "navigationBarTitleText": "queue"
+}

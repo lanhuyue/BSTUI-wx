@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "flexBox": "../flexBox/flexBox",
+    "modal": "../modal/modal"
+  }
+}

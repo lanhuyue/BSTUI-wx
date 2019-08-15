@@ -1,0 +1,16 @@
+<!--miniprogram/pages/index/components/fontIcon/index.wxml-->
+  <queue
+   class="font-icon-box"
+    type='equipartition'
+    itemStyle='width:28%;color:#2b2b2b;font-size:24rpx;text-align: center;'
+  >    
+    <queueItem wx:for='{{fontArr}}' wx:key='c_{{index}}' >
+        <flexBox start='100rpx' componentStyle='' vertical='{{true}}'
+         >
+          <view slot='start' style="line-height:100rpx"> 
+              <BSTicon   className='{{item}}'  size='55' color='#bfbfbf'/>
+          </view>
+          <view slot='end' style="color:#000" >{{item}}</view> 
+        </flexBox>
+    </queueItem>
+  </queue>

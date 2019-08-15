@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "Cheader": "plugin://BSTCommon/Cheader",
+    "STBox": "plugin://BSTCommon/STBox",
+    "STItem": "plugin://BSTCommon/STItem",
+    "flexBox": "plugin://BSTCommon/flexBox",
+    "dateSelector": "plugin://BSTCommon/dateSelector"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationStyle": "custom"
+}

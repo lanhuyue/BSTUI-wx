@@ -1,0 +1,14 @@
+/* pages/index/components/coder/index.wxss */
+.e-item{
+  display: block;
+  margin-bottom: 40rpx;
+  background-color: #d7eaef;
+  border-radius: 8rpx;
+  box-shadow: 0 10rpx 20rpx #eaedee;
+  overflow: hidden;
+}
+.e-title{
+  display: block;
+  padding: 20rpx;
+  box-sizing: border-box;
+}

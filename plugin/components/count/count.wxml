@@ -1,0 +1,18 @@
+<!--common/components/count/count.wxml-->
+<view class='count-box'>
+  <view
+    wx:if='{{type=="default"}}' 
+    class='count-icon {{rd?"":"icon-disabled"}}' 
+    bindtap='calculation' 
+    data-operator='-'
+   >-</view>
+  <image wx:if='{{type=="img"}}' mode='aspectFit' src='{{RimgURL}}' bindtap='calculation' data-operator='-'/>
+  <text style='{{textStyle}}'>{{text}}</text>
+  <view 
+    wx:if='{{type=="default"}}' 
+    class='count-icon {{pd?"":"icon-disabled"}}' 
+    bindtap='calculation' 
+    data-operator='+'
+  >+</view>
+  <image wx:if='{{type=="img"}}' mode='aspectFit' src='{{PimgURL}}' bindtap='calculation' data-operator='+'/>
+</view>

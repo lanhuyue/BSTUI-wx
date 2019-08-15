@@ -1,0 +1,191 @@
+<!--miniprogram/pages/index/components/button/index.wxml-->
+<view class="button-item">
+    <view>
+      <view class="text">默认样式</view>
+      <view>
+        <BSTbutton round/>
+      </view>
+      <view style="padding-top:20rpx">
+        <BSTbutton disabled text='不可点击' round />
+      </view>
+       <view style="padding-top:20rpx">
+          <BSTbutton  round  isShadow text='主操作(有阴影)' />
+      </view>
+    </view>
+</view >
+<view class="button-item button-item2">
+    <view>
+      <view class="text">默认样式-小按钮</view>
+      <view class="inner-buttou-box">
+        <BSTbutton  width='164' height='72' size='30' />
+        <BSTbutton  width='164' height='72' size='30' isShadow text='有阴影' />
+        <BSTbutton disabled text='不可点击'   width='192' height='72' size='30'/>
+      </view>
+      <view class="inner-buttou-box" style="padding-top:20rpx">
+        <BSTbutton  width='164' height='72' size='30' round size='30'/>
+         <BSTbutton  width='164' height='72' size='30' round size='30' text='有阴影' isShadow />
+        <BSTbutton disabled text='不可点击'   width='192' height='72' round size='30'/>
+      </view>
+    </view>
+</view >
+<view class="button-item">
+    <view>
+      <view class="text">warning样式</view>
+        <view style="padding-top:20rpx">
+        <BSTbutton type='warning' />
+      </view>
+      <view style="padding-top:20rpx">
+        <BSTbutton disabled text='不可点击' type='warning' />
+      </view>
+       <view style="padding-top:20rpx">
+          <BSTbutton    isShadow text='主操作(有阴影)' type='warning'/>
+      </view>
+    </view>
+</view >
+<view class="button-item button-item2">
+    <view>
+      <view class="text">warning样式-小按钮</view>
+      <view class="inner-buttou-box">
+        <BSTbutton  width='164' height='72' size='30' type='warning' />
+        <BSTbutton  width='164' height='72' size='30' isShadow text='有阴影' type='warning' />
+        <BSTbutton disabled text='不可点击'   width='192' height='72' size='30' type='warning'/>
+      </view>
+      <view class="inner-buttou-box"  style="padding-top:20rpx">
+        <BSTbutton  width='164' height='72' size='30' round size='30'type='warning' />
+         <BSTbutton  width='164' height='72' size='30' round size='30' text='有阴影' type='warning' isShadow/>
+        <BSTbutton disabled text='不可点击'   width='192' height='72' round  size='30' type='warning'/>
+      </view>
+    </view>
+</view >
+<view class="button-item">
+    <view>
+      <view class="text">type:wxicon样式</view>
+      <view>
+        <BSTbutton   IconConfig='{{wxIcon1}}'  />
+      </view>
+      <view style="padding-top:20rpx">
+        <BSTbutton disabled text='不可点击' round  disabled IconConfig='{{wxIcon2}}'/>
+      </view>
+      <view style="padding-top:20rpx" >
+        <BSTbutton  IconConfig='{{wxIcon3}}' type='warning' />
+      </view>
+      <view style="padding-top:20rpx">
+        <BSTbutton disabled text='不可点击'   IconConfig="{{wxIcon2}}" />
+      </view>
+       <view style="padding-top:20rpx">
+          <BSTbutton isShadow text='主操作(有阴影)' round  type='warning' IconConfig="{{wxIcon3}}" />
+      </view>
+    </view>
+</view >
+<view class="button-item">
+    <view>
+      <view class="text">type:urlIcon样式</view>
+      <view>
+        <BSTbutton   IconConfig='{{urlIcon1}}'  />
+      </view>
+      <view style="padding-top:20rpx">
+        <BSTbutton disabled text='不可点击' round  disabled IconConfig='{{urlIcon2}}'/>
+      </view>
+      <view style="padding-top:20rpx" >
+        <BSTbutton  IconConfig='{{urlIcon1}}' type='warning' />
+      </view>
+      <view style="padding-top:20rpx">
+        <BSTbutton disabled text='不可点击'   IconConfig="{{urlIcon2}}" />
+      </view>
+    </view>
+</view >
+<view class="button-item">
+    <view>
+      <view class="text">type:fontICon样式</view>
+      <view>
+      <view class="iconfont iconiconfont12306"></view>
+       <BSTbutton   IconConfig='{{fontIcon}}'  /> 
+      </view>
+      <view style="padding-top:20rpx">
+        <BSTbutton disabled text='不可点击' round  disabled IconConfig='{{fontIcon2}}'/>
+      </view>
+     <view style="padding-top:20rpx" >
+        <BSTbutton  IconConfig='{{fontIcon3}}' type='warning' text='' />
+      </view>
+      <!--  <view style="padding-top:20rpx">
+        <BSTbutton disabled text='不可点击'   IconConfig="{{urlIcon2}}" />
+      </view> -->
+    </view>
+</view >
+<view class="button-item button-item2">
+    <view>
+      <view class="text">次要按钮</view>
+      <view class="inner-buttou-box">
+       <BSTbutton  type='wireframe' width='148' height='60'
+         FontColor='#fff' wireframebg='#7ABAF9' text='BUTTON' size='26'/>
+          <BSTbutton  type='wireframe' width='148' height='60'
+         FontColor='#fff' wireframebg='#EAEAEA' text='BUTTON'   size='26'/>
+           <BSTbutton  type='wireframe' width='148' height='60'
+         FontColor='#4FA4F9'  text='BUTTON'  borderText='2rpx solid #4FA4F9'  size='26'/>
+      </view>
+      <view class="inner-buttou-box"  style="padding-top:20rpx">
+        <BSTbutton  
+          type='wireframe' 
+          width='192' 
+          height='60'
+          FontColor='#4FA4F9'  
+          text='BUTTON'  
+          borderText='2rpx solid #4FA4F9'  
+          size='26'
+          IconConfig='{{smallIcon}}'
+        />
+       <BSTbutton  
+          type='wireframe' 
+          width='192' 
+          height='60'
+          FontColor='#FB572A'  
+          text='次要按钮'  
+          borderText='2rpx solid #FB572A'  
+          size='26'
+        />
+         <BSTbutton  
+          type='wireframe' 
+          width='192' 
+          height='60'
+          FontColor='#4FA4F9'  
+          text='BUTTON'  
+          borderText='2rpx solid #4FA4F9'  
+          size='26'
+          IconConfig='{{urlIcon}}'
+        />
+      </view>
+      <view class="inner-buttou-box"  style="padding-top:20rpx">
+         <BSTbutton  
+          type='wireframe' 
+          width='192' 
+          height='60'
+          FontColor='#4FA4F9'  
+          borderText='2rpx solid #4FA4F9' 
+          text=''   
+          size='26'
+          IconConfig='{{smallIcon}}'
+        />
+         <BSTbutton  
+          type='wireframe' 
+          width='192' 
+          height='60'
+          FontColor='#4FA4F9'  
+          borderText='2rpx solid #4FA4F9' 
+          text=''   
+          size='26'
+          IconConfig='{{fontIcon2}}'
+        />
+         <BSTbutton  
+          type='wireframe' 
+          width='192' 
+          height='60'
+          FontColor='#f00'  
+          borderText='2rpx solid #4FA4F9' 
+          text=''   
+          size='26'
+          IconConfig='{{urlIcon}}'
+        />
+       
+      </view>
+    </view>
+</view >

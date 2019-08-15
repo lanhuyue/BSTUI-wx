@@ -1,0 +1,21 @@
+/* plugin/components/queue/queue.wxss */
+.queue-box{
+  width: 100%;
+  line-height: 0;
+  font-size: 0;
+}
+.queue-equipartition{
+  text-align: justify;
+}
+.tance{
+  height: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  border-color: transparent !important;
+}
+.queue-box::after{
+  display: inline-block;
+  content: " ";
+  width: 100%;
+  height: 1px;
+}

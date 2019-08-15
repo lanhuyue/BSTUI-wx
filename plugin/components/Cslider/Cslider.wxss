@@ -1,0 +1,48 @@
+/* plugin/components/Cslider/Cslider.wxss */
+/*滑动条*/
+.bst-slider-box{
+  position: relative;
+  width: 100%;
+  height: 60rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.bst-slider-content{
+    position: relative;
+    background-color: #38A8F6;
+    box-shadow: inset 0 1rpx 2rpx #999999 ;
+    height: 6rpx;
+    top: 50%;
+    left: 0;
+    margin-top: -3rpx;
+    width: 100%;
+   
+  }
+.bst-slider-handle{
+      position: absolute;
+      top: -27rpx;
+      background-color: white;
+      border-radius: 50%;
+      height: 60rpx;
+      width: 60rpx;
+      box-shadow: 0 0 5rpx #999;
+    }
+    .left-handle{
+      left: 0;
+      margin-left: -30rpx;
+    }
+    .right-handle{
+      right: 0;
+      margin-right: -30rpx;
+    }
+    .bst-sliderMask-left,.bst-sliderMask-right{
+      height: 100%;
+      background-color: #ff974c;
+ border-radius: 6rpx;
+    }
+    .bst-sliderMask-left{
+      float: left;
+    }
+    .bst-sliderMask-right{
+      float: right;
+    }

@@ -1,0 +1,7 @@
+<!--pages/index/components/count/index.wxml-->
+<view class="container">
+  <count 
+        max='{{10}}'
+        bindchange='oncountchange'
+  />
+</view>

@@ -1,0 +1,4 @@
+/* pages/index/components/Cheader/index.wxss */
+button{
+  margin-bottom: 20rpx;
+}

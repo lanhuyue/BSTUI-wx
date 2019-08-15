@@ -1,0 +1,7 @@
+/* miniprogram/pages/index/components/queue/index.wxss */
+.cell-item{
+  border-top: 1rpx solid #eee;
+  border-left: 1rpx solid #eee;
+  padding: 60rpx 0;
+  text-align: center;
+}

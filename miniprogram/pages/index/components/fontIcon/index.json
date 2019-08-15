@@ -1,0 +1,9 @@
+{
+ "usingComponents": {
+  "BSTicon": "plugin://BSTCommon/BSTicon",
+  "flexBox": "plugin://BSTCommon/flexBox",
+  "queue": "plugin://BSTCommon/queue",
+  "queueItem": "plugin://BSTCommon/queueItem"
+},
+"navigationBarTitleText": "fontIcon"
+}

@@ -1,0 +1,13 @@
+/* pages/index/components/STBox/index.wxss */
+/* .stbox view{
+  width: 100%;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  background: rgba(0,0,0,0.5);
+  margin-bottom: 20rpx;
+  color: white;
+
+} */
+.date-btn{
+  padding: 0 20rpx;
+}

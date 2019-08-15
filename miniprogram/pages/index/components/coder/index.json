@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "coder": "plugin://BSTCommon/coder",
+    "flexBox": "plugin://BSTCommon/flexBox",
+    "Cinput": "plugin://BSTCommon/Cinput"
+  },
+  "navigationBarTitleText": "coder"
+}

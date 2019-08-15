@@ -1,0 +1,63 @@
+/**app.wxss**/
+
+page{
+  height: 100%;
+  width: 100%;
+}
+.container {
+  /* height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box; */
+  padding: 32rpx;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+  overflow-y:auto;
+  background-color: #eee;
+} 
+image{
+  width: 100%;
+}
+button{
+  border-radius: 60rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #eee;
+  /* line-height: 80rpx */
+}
+button::after{
+  box-shadow: none;
+  border: none;
+}
+view{
+  box-sizing: border-box;
+}
+/*card*/
+.card{
+  background-color: white;
+  border-radius: 8rpx;
+  box-shadow: 0 10rpx 20rpx #ebecec;
+  margin-bottom: 20rpx;
+}
+.card-title{
+  border-bottom: 1rpx solid #eee;
+  padding: 20rpx;
+  font-size: 28rpx;
+}
+.card-title::before{
+  content: " ";
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+  background-color: #0583eb;
+  vertical-align: middle;
+}
+.card-content{
+   padding: 20rpx;
+}

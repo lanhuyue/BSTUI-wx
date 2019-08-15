@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "queue": "plugin://BSTCommon/queue",
+    "queueItem": "plugin://BSTCommon/queueItem",
+    "Cheader":"plugin://BSTCommon/Cheader"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationStyle": "custom"
+}

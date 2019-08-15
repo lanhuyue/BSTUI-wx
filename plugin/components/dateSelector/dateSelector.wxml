@@ -1,0 +1,45 @@
+<!--plugin/components/dateSelector/dateSelector.wxml-->
+<view>
+  <view class='view' bindtap='onDateClick'><slot></slot></view>
+  <modal
+    show='{{show}}'
+    type='drawer-{{float}}'
+    contentStyle='overflow:hidden;height:100%'
+    bodyStyle='width:100%;border-radius:0;overflow:hidden;height:1000rpx;{{bodyStyle}}'
+    bindhide='onhide'
+    class='date-selector'
+  >
+    <flexBox start='80rpx' vertical='{{true}}' bindtap='hideMoreView'>
+      <view slot='start' style='height:100%' class='view' >
+        <button class='button date-cancel' catchtap='onMoreClick' style='{{leftButtonStyle}}'>{{hasMore===true?'more':'取消'}}</button>
+        <view class='view date-title' style='{{titleStyle}}'>{{title}}</view>
+        <button class='button date-sure' bindtap='onsure' disabled='{{disabledSure}}' style='{{sureStyle}}'>确定</button>
+      </view>
+      <calendar
+        slot='end'
+        type='{{type}}'
+        monthShowDate='{{monthShowDate}}'
+        monthShowNum='{{monthShowNum}}'
+        value='{{value}}'
+        style='height:100%'
+        markerData='{{markerData}}'
+        titleStyle='{{dateTitleStyle}}'
+        checkedStyle='{{checkedStyle}}'
+        checkedFGStyle='{{checkedFGStyle}}'
+        rangeStyle='{{rangeStyle}}'
+        todayStyle='{{todayStyle}}'
+        monthTitleStyle='{{monthTitleStyle}}'
+        bindchange='onDateChange'
+        bindcheckStart='onCheckStartDate'
+        bindexamplePipe='onexamplePipe'
+      />
+    </flexBox>
+    <view class='view more-operation' animation='{{moreAnimation}}'>
+      <button class='button' data-name='-m' bindtap='onMoreButtonClick'>上一月</button>
+      <button class='button' data-name='+m' bindtap='onMoreButtonClick'>下一月</button>
+      <button class='button' data-name='-y' bindtap='onMoreButtonClick'>上一年</button>
+      <button class='button' data-name='+y' bindtap='onMoreButtonClick'>下一年</button>
+    </view>
+  </modal>
+</view>
+

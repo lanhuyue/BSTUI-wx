@@ -1,0 +1,62 @@
+<!--miniprogram/pages/index/components/queue/index.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="card-title">typ=equipartition(均分队列)</view>
+    <view class="card-content">
+        <flexBox start='100rpx' componentStyle='margin-bottom:20rpx'>
+          <view slot='start'>{{itemWidth}}</view>
+          <Cslider 
+              slot='end'
+              value='{{equipartitionValue}}'
+              mode='custom'
+              scale='{{equipartitionScale}}'
+              bindchange='onsliderchange' 
+          /> 
+        </flexBox>
+        <queue
+          type='equipartition'
+          itemStyle='width:{{itemWidth}};background-color:#4FA4F9;color:#fff'
+        >
+          <queueItem wx:for='{{list}}' wx:key='c_{{index}}'>
+            <view>{{item.label}}</view>
+          </queueItem>
+        </queue>
+    </view>
+  </view>
+  <view class="card">
+    <view class="card-title">type=auto(自适应队列)</view>
+    <view class="card-content">
+      <queue
+          type='auto'
+          itemStyle='background-color:#4FA4F9;color:#fff;margin-right:20rpx'
+        >
+          <queueItem wx:for='{{list2}}' wx:key='c_{{index}}'>
+            <view>{{item.label}}</view>
+          </queueItem>
+        </queue>
+    </view>
+  </view>
+  <view class="card">
+    <view class="card-title">type=equipartition(可衍生为宫格)</view>
+    <view class="card-content">
+      <view style="overflow: hidden">
+      <queue
+          boxStyle='margin:-2rpx 0 0 -2rpx'
+          type='equipartition'
+          itemStyle='width:33.333333%;margin-bottom:0;padding:0'
+        >
+          <queueItem wx:for='{{list}}' wx:key='c_{{index}}'>
+            <view class="cell-item">{{item.label}}</view>
+          </queueItem>
+      </queue>
+      </view>
+      
+    </view>
+  </view>
+  <view class="card">
+    <view class="card-title">type=list(列表队列)</view>
+    <view class="card-content" style="color:#999">
+      拓展中...，敬请期待
+    </view>
+  </view>
+</view>

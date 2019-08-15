@@ -1,0 +1,68 @@
+/* miniprogram/pages/index/components/label/label.wxss */
+.label-title{
+  margin: 20rpx;
+  font-size:40rpx;
+  font-family:'SFUIText-Semibold';
+  font-weight:600;
+  color:rgba(74,74,74,1);
+  line-height:56rpx;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8rpx;
+}
+.label-box{
+  padding: 20rpx;
+}
+.label-box >view{
+   margin: 30rpx; 
+}
+/* labe样式1 */
+.BTS-label-default{
+  --Color1: #4FA4F9;
+	--Color2: #F48831;
+	--Color3: #FF8585;
+	--Color4: #FF8585;
+  --Color5: #BFBFBF;
+  line-height: 30rpx;
+  height: 30rpx;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 22rpx;
+  font-weight: 400;
+  border-radius: 4rpx;
+  text-align: center;
+  display: inline-block;
+}
+.BTS-label-default-bg1{
+  background:var(--Color1); 
+}
+.BTS-label-default-bg2{
+  background:var(--Color2); 
+}
+.BTS-label-default-bg3{
+  background:var(--Color3); 
+}
+.BTS-label-default-bg4{
+  background:var(--Color4); 
+}
+.BTS-label-default-bg5{
+  background:var(--Color5); 
+}
+/* labe样式2 */
+.BTS-label-beveling{ 
+  background:rgba(151,230,216,1) ;
+  color: #fff;
+  padding: 0 64rpx 0 32rpx;
+  font-size:22rpx; 
+  border-radius:8rpx 0px 0rpx 0px;
+  display: inline-block;
+  height: 92rpx;
+  line-height: 92rpx;
+  width: 190rpx;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.BTS-label-beveling::before{
+
+}

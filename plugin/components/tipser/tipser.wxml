@@ -1,0 +1,9 @@
+<!--common/components/tipser/tipser.wxml-->
+<flexBox  start='40rpx' class='roll-tips' componentStyle=''>
+  <image slot='start' class='tips-icon' mode='aspectFit' src='{{imgDomain}}/images/news-icon.png'></image>
+  <view class='tips-content'slot='end' bindtap='onClick'>
+    <view class='tips-content-str' animation="{{contentAnimation}}">
+      <rich-text nodes='{{content}}' id='contentText'></rich-text>
+    </view>
+  </view>
+</flexBox>

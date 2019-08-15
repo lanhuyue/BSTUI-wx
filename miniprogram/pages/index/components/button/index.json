@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "BSTbutton": "plugin://BSTCommon/BSTbutton"
+  },
+  "navigationBarTitleText": "button"
+}

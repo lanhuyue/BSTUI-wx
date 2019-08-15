@@ -1,0 +1,20 @@
+<!--pages/index/components/modal/index.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="card-title">基础modal，分为5个方向弹出</view>
+    <view class="card-content">
+        <block
+          wx:for='{{buttonData}}' wx:key='b_{{index}}'
+        >
+          <button  bindtap="onButtonClick" data-index='{{index}}'>{{item.type}}</button>
+          <modal 
+            type='{{item.type}}'
+            show='{{item.modalShow}}'
+            data-index='{{index}}'
+            bindhide='onmodalhide'
+          ><view class="modal-content">我是{{item.type}}</view></modal>
+        </block>
+    </view>
+  </view>
+  
+</view>

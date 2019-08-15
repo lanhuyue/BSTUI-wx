@@ -1,0 +1,11 @@
+/* miniprogram/pages/index/components/LSDrawer/index.wxss */
+.user-icon{
+  height: 80rpx
+}
+.user-info{
+  padding: 0 10rpx;
+}
+.user-phone{
+  color: #999;
+  font-size: 28rpx;
+}

@@ -1,0 +1,18 @@
+<!--miniprogram/pages/index/components/Cslider/index.wxml-->
+<view class="container" >
+  <view class="card" wx:for='{{list}}' wx:key='s_{{index}}'>
+    <view class="card-title">type={{item.type}}；mode={{item.mode}}</view>
+    <view class="card-content">
+      <view>{{item.label}}</view>
+      <Cslider 
+          value='{{item.value}}'
+          type='{{item.type}}'
+          mode='{{item.mode}}'
+          minRange='{{item.minRange}}'
+          scale='{{item.scale}}'
+          bindchange='onsliderchange' 
+          data-index='{{index}}'
+      /> 
+    </view>
+  </view>
+</view>

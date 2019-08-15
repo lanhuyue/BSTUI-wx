@@ -1,0 +1,7 @@
+
+<view class='barcode-box {{className}}' style='{{componentStyle}};height:{{boxHeight}};padding:{{padding}}rpx;' id='coderbox'>
+  <view wx:if='{{!isHidden}}' class='barcode-tips'><text class='barcode-tips-text'>{{loadTips}}</text></view>
+  <rich-text nodes='{{domStr}}' class='rich-text-box' style='height:{{barHeight}}px'></rich-text>
+  <view class='barcode-text' wx:if='{{showText&&isHidden}}' style='{{textStyle}}'>{{value}}</view>
+</view>
+

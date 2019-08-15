@@ -1,0 +1,47 @@
+<!--pages/index/components/dateSelector/index.wxml-->
+<view class="container">
+  <view class="card">
+      <view class="card-title">默认日历选择器，type=point</view>
+      <view class="card-content">
+            <view class="d-label">{{date?date:"请选择日期"}}</view>
+           <dateSelector
+              type='point'
+              bindchange='datechange'
+              
+            checkedStyle='background-color:red'
+            checkedFGStyle='background-color:red'
+            >
+              <button>slecte date</button>
+            </dateSelector>
+      </view>
+  </view>
+  <view class="card">
+        <view class="card-title">type=range</view>
+        <view class="card-content">
+            <view class="d-label">{{date2?date2:"请选择日期"}}</view>
+            <dateSelector
+                type='range'
+                bindchange='datechange2'
+              >
+                <button>slecte date</button>
+            </dateSelector>
+        </view>
+    </view>
+    <view class="card">
+        <view class="card-title">范围;更多操作;多月显示</view>
+        <view class="card-content">
+            <view class="d-label">{{date3?date3:"请选择日期"}}</view>
+            <dateSelector
+                type='range'
+                hasMore='{{true}}'
+                monthShowNum='{{3}}'
+                bindchange='datechange3'
+                
+            checkedStyle='background-color:red'
+            checkedFGStyle='background-color:red'
+              >
+                <button>slecte date</button>
+            </dateSelector>
+        </view>
+    </view>
+</view>

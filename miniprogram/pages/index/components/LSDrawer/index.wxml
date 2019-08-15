@@ -1,0 +1,18 @@
+<!--miniprogram/pages/index/components/LSDrawer/index.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="card-title">默认功能</view>
+    <view class="card-content">
+        <LSDrawer>
+            <flexBox start='80rpx'>
+              <image class="user-icon" slot='start' src="{{imageDomain}}loginIcon2.png" />
+              <view slot='end' class="user-info">
+                <view class="user-name">张三</view>
+                <view class="user-phone">180****4157</view>
+              </view>
+            </flexBox>
+        </LSDrawer>
+    </view>
+  </view>
+  
+</view>

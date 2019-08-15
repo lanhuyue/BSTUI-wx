@@ -1,0 +1,9 @@
+/* miniprogram/pages/index/components/fontIcon/index.wxss */
+.font-icon-size{
+    font-size: 30rpx;
+    color: #2b2b2b;
+    line-height: 50rpx;
+    border-bottom: 1px solid #aaa;
+    text-align: center;
+    padding: 10rpx;
+}

@@ -1,0 +1,46 @@
+<!--plugin/components/calendar/calendar.wxml-->
+<view class='bst-date-box' style='{{boxStyle}}' id="dateBox">
+    <view class='date-title' style='{{titleStyle}}'>
+      <view class='view' wx:for='{{title}}'  wx:for-index='t'  wx:key='_t_{{t}}'>{{item}}</view>
+    </view>
+    <scroll-view class='date-content' scroll-y scroll-with-animation >
+        <!-- 渲染月 -->
+       <view 
+          class='date-month'
+          wx:for='{{dateAry}}'
+          wx:for-item="month" 
+          wx:for-index="mi"
+          wx:key='_m_{{mi}}'
+       >
+          <view class='month-title' style='{{monthTitleStyle}}'>{{month.value}}</view>
+          <view class='month-content'>
+            <!-- 渲染空白位置 -->
+            <view class="view" wx:for='{{month.vacancy}}'  wx:for-index="v"  wx:key='_v_{{v}}'></view>
+            <!-- 渲染天 -->
+            <view
+              wx:for='{{month.day}}'
+              wx:for-item="day" 
+              wx:for-index="di"
+              wx:key='_d_{{di}}'
+              data-day='{{day}}'
+              data-month='{{month}}'
+              data-level='{{[mi,di]}}'
+              class='view date-day {{day.className}}'
+              style='{{day.style}};height:{{dayHheight}}'
+              bindtap='dayClickFun'
+            >
+              <block wx:if='{{!day.isChecked}}'>
+                <view class='date-marker-top' style='{{day.marker.topStyle||""}}'>{{day.marker.top||""}}</view>
+                <view class="date-num">{{day.value}}</view>
+                <view class='date-marker-bottom' style='{{day.marker.bottomStyle||""}}'>{{day.marker.bottom||""}}</view>
+              </block>
+              <!-- 如果是被选中的时间就包裹一层容器 -->
+              <view wx:else class='date-checked-body' style='{{day.checkedFGStyle}}'>
+                <view class='date-marker-top' style='{{day.marker.topStyle||""}}'>{{day.marker.top||""}}</view>
+                <view class="date-num">{{day.value}}</view>
+                <view class='date-marker-bottom' style='{{day.marker.bottomStyle||""}}'>{{day.marker.bottom||""}}</view>
+              </view></view>
+          </view>
+       </view>
+    </scroll-view>
+</view>

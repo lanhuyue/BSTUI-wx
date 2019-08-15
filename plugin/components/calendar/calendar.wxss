@@ -1,0 +1,137 @@
+/* plugin/components/calendar/calendar.wxss */
+.bst-date-box{
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  height: 100%;
+  position: relative;
+}
+.date-box{
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.date-title,.date-content,.date-month,.month-title,.month-content{
+  width: 100%;
+  box-sizing: border-box;
+}
+.date-content{
+  white-space: normal;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 73rpx;
+}
+.date-title{
+  color: #999;
+  background-color: #fff;
+  padding:  0 10rpx;
+  font-size:30rpx;
+  height: 73rpx;
+  line-height: 73rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.month-title{
+  background-color: #F5F5F5;
+  height: 77rpx;
+  color: #3E3E3E;
+  text-align: center;
+  font-size:30rpx;
+  line-height:77rpx;
+}
+.month-content{
+  padding-top: 10rpx;
+  /* padding: 10rpx 10rpx 0 10rpx; */
+  /* background-color: white; */
+}
+.date-title .view{
+  display: inline-block;
+  width: 14.28%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.date-day{
+  /* background-color: #fff; */
+  font-size: 0;
+  margin-bottom: 10rpx;
+  color: #000;
+  /* border:10rpx solid #fff; */
+}
+.date-today{
+  color:#fff;
+  background-color: orange;
+  border-radius: 50%;
+  /* border-color: orange; */
+}
+.date-num{
+  height: 50%;
+  line-height:36rpx;
+  font-size: 30rpx;
+}
+.date-marker-top,.date-marker-bottom{
+  height: 25%;
+  width: 100%;
+  font-size: 16rpx;
+  line-height: 20rpx;
+  margin: 0;
+  padding: 0;
+}
+.date-marker-top{
+  color: #FC5151;
+}
+.date-marker-bottom{
+  color: #4FA4F9;
+}
+.date-range{
+  background-color: #C7E6FB;
+  border-radius: 0;
+}
+.date-checked{
+  background-color: #C7E6FB;
+  /* color: white; */
+  border-radius: 50%;
+  /* padding: 10rpx; */
+}
+.date-checked-left{
+  background-color: #C7E6FB;
+  /* color: white; */
+  border-radius: 50% 0 0 50%;
+}
+.date-checked-right{
+  background-color: #C7E6FB;
+  /* color: white; */
+  border-radius:0 50% 50% 0;
+}
+.date-disable{
+  color:#ccc;
+}
+.month-content .view{
+  display: inline-block;
+  width: 14.28571428571429%;
+  /* height: 120px;  */
+  padding: 1.5%;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.date-checked-body{
+  height: 100%;
+  width: 100%;
+}
+.date-checked .date-checked-body,
+.date-checked-left .date-checked-body,
+.date-checked-right .date-checked-body{
+  color: orange;
+  background-color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10rpx rgba(3, 166, 241, 0.61);
+}

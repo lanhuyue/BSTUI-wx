@@ -1,0 +1,30 @@
+<!--miniprogram/pages/index/components/flexBox/index.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="card-title">start=150rpx；end=auto；vertical=false</view>
+    <view class="card-content">
+        <flexBox start='150rpx'>
+          <view class="start" slot='start'>start</view>
+          <view class="end" slot='end'>end</view>
+        </flexBox>
+    </view>
+  </view>
+  <view class="card">
+    <view class="card-title">start=auto；end=30%；vertical=false</view>
+    <view class="card-content">
+        <flexBox end='30%'>
+          <view class="start" slot='start'>start</view>
+          <view class="end" slot='end'>end</view>
+        </flexBox>
+    </view>
+  </view>
+  <view class="card">
+    <view class="card-title">start=auto；end=80rpx；vertical=true</view>
+    <view class="card-content" style="height:400rpx;">
+        <flexBox end='80rpx'vertical='{{true}}'>
+          <view class="start" slot='start'>start</view>
+          <view class="end" slot='end'>end</view>
+        </flexBox>
+    </view>
+  </view>
+</view>

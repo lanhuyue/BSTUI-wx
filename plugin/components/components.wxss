@@ -1,0 +1,24 @@
+.view{
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+.direction-icon-left,
+.direction-icon-right,
+.direction-icon-top,
+.direction-icon-bottom
+{
+  display: inline-block;
+  width: 22rpx;
+  height: 22rpx;
+  border-top: 1px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+  transform-origin: 60% 40%;
+}
+.direction-icon-left{transform: rotateZ(-135deg);}
+.direction-icon-right{transform: rotateZ(45deg);}
+.direction-icon-top{transform: rotateZ(-45deg);}
+.direction-icon-bottom{transform: rotateZ(135deg);}
+
+

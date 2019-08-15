@@ -1,0 +1,10 @@
+<!--plugin/components/averageGroup/averageGroup.wxml-->
+<view class='bst-ag-box' id='agBox'>
+  <block
+      wx:for='{{newList}}'
+      wx:key='_a_{{index}}'
+  >
+    <view class='view'  bindtap='itemClick' data-item='{{item}}' data-index='{{index}}' style='{{item._style}}' >{{item[labelKey]}}</view>{{" "}}
+  </block>
+  <block wx:for="{{column-newList.length%column}}" wx:key="_*hi_{{index}}"><i class='tance' style='width:{{itemWidth}}'></i>{{" "}}</block>
+</view>

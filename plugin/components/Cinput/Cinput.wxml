@@ -1,0 +1,31 @@
+<!--plugin/components/Cinput/Cinput.wxml-->
+<view class='c-input-box' style='{{boxStyle}}'>
+  <image class='c-icon-img' src='{{startIconURL}}' wx:if='{{startIconURL}}' />
+  <icon class='c-icon-search' wx:if='{{startIconColor&&!startIconURL}}' type='{{startIconType}}' color='{{startIconColor}}'/>
+  <input
+    class='c-input'
+    style='{{_inputStyle}}'
+    value='{{value}}'
+    placeholder='{{placeholder}}'
+    placeholder-style='{{placeholderStyle}}'
+    disabled='{{disabled}}'
+    focus='{{focus}}'
+    maxlength='{{maxlength}}'
+    type='{{type}}'
+    confirm-type='{{confirmType}}'
+    cursor-spacing='{{cursorSpacing}}'
+    bindinput='oninput'
+    bindfocus='onfocus'
+    bindblur='onblur'
+    bindconfirm='onconfirm'
+  ></input>
+  <icon 
+    hidden='{{clearHidden}}'
+    class='c-icon-clear' 
+    wx:if='{{clearColor}}' 
+    type='clear' 
+    color='{{clearColor}}' 
+    bindtap='onclear'
+  />
+</view>
+

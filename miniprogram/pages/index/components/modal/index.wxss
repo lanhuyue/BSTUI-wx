@@ -1,0 +1,8 @@
+/* pages/index/components/modal/index.wxss */
+button{
+  margin-bottom:20rpx; 
+}
+.modal-content{
+  padding: 40rpx;
+  box-sizing: border-box;
+}

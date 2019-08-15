@@ -1,0 +1,13 @@
+<!--common/components/cardType/cardtype.wxml-->
+<modal id='modal' type='drawer-bottom'  bodyStyle='background-color:transparent;width:100%;border-radius:0;'>
+  <view class='dialog-list-box'>
+    <view 
+      wx:for='{{showList}}'
+      wx:key='_l_{{index}}'
+      bindtap='onListItemClick'
+      data-item='{{item}}'
+    >
+    <text>{{item.label}}</text>
+    </view>
+  </view>
+</modal>

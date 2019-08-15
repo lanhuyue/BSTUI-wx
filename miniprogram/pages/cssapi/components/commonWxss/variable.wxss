@@ -1,0 +1,59 @@
+page:root{
+  /* 品牌颜色 */
+  --chemeColorBrand200:rgba(27, 55, 84, 1);
+  --chemeColorBrand100:rgba(53, 109, 166, 1);
+  --chemeColorBrand:rgba(73, 164, 249, 1);
+  --chemeColorBrand-100:rgba(122, 186, 249, 1);
+  --chemeColorBrand-200:rgba(164, 207, 249, 1);
+  --chemeColorBrand-300:rgba(207, 228, 249, 1) ;
+  /*辅助颜色*/
+  --auxiliaryColor200:#542F11;
+  --auxiliaryColor100:#ab5f22;
+  --auxiliaryColor:#f48831;
+  --auxiliaryColor-100:#f4af78;
+  --auxiliaryColor-200:#f4c6a1;
+  --auxiliaryColor-300:#ff4ddcb;  
+  /*次要颜色-gerrn*/
+  --secondaryColorGreen200:#164D3D;
+  --secondaryColorGreen100:#0d9980;
+  --secondaryColorGreen:#11c7a7;
+  --secondaryColorGreen-100:#6ee0cc;
+  --secondaryColorGreen-200:#97e6d8;
+  --secondaryColorGreen-300:#bee6df;
+  /*次要颜色-red*/
+  --secondaryColorRed200:#542c2c;
+  --secondaryColorRed100:#ab5959;
+  --secondaryColorRed:#ff8585;
+  --secondaryColorRed-100:#ff9494;
+  --secondaryColorRed-200:#ffadad;
+  --secondaryColorRed-300:#ffc7c7;
+  /*文字颜色Dark*/
+  --textDarkColor200:#000;
+  --textDarkColor100:#4a4a4a;
+  --textDarkColor:#9b9b9b;
+  --textDarkColor-100:#bfbfbf;
+  --textDarkColor-200:#fff;
+  --textDarkColor-300:#eaeaea;
+  /*文字颜色light*/
+  --textLightColor200:rgba(255,255,255,1);
+  --textLightColor100:rgba(255,255,255,0.7);
+  --textLightColor:rgba(255,255,255,.4);
+  --textLightColor-100:rgba(255,255,255,0.25);
+  --textLightColor-200:rgba(0,0,0,1);
+  --textLightColor-300:rgba(255,255,255,0.15);
+  /*文字字号*/
+  --fontSize20:40rpx;
+  --fontSize18:36rpx;
+  --fontSize16:32rpx;
+  --fontSize15:30rpx;
+  --fontSize14:28rpx;
+  --fontSize13:26rpx;
+  --fontSize12:24rpx;
+  --fontSize11:24rpx;
+  --fontSize10:20rpx;
+  /* 其他 */
+  --buttonBule:linear-gradient(315deg,rgba(74,152,255,1) 0%,rgba(100,193,255,1) 100%);
+  --buttonOrange:linear-gradient(315deg,rgba(251,87,42,1) 0%,rgba(255,139,82,1) 100%);
+  --indentCard:linear-gradient(226deg,rgba(85,158,255,1) 0%,rgba(124,203,255,1) 100%);
+  --Background:#f3f6fb;
+}

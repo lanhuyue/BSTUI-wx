@@ -1,0 +1,32 @@
+{
+  "publicComponents": {
+    "Ccheckbox": "components/BSTcheckbox/checkbox",
+    "CCgroup": "components/BSTcheckbox/checkbox-group",
+    "Cslider": "components/Cslider/Cslider",
+    "Ctab": "components/Ctab/Ctab",
+    "Cheader": "components/Cheader/Cheader",
+    "Cinput": "components/Cinput/Cinput",
+    "CtabItem": "components/Ctab/CtabItem",
+    "addressSelector": "components/addressSelector/addressSelector",
+    "cardType": "components/cardType/cardType",
+    "coder": "components/coder/coder",
+    "count": "components/count/count",
+    "dateLine": "components/dateLine/dateLine",
+    "dateSelector": "components/dateSelector/dateSelector",
+    "dialog": "components/dialog/dialog",
+    "drawer": "components/drawer/drawer",
+    "flexBox": "components/flexBox/flexBox",
+    "modal": "components/modal/modal",
+    "averageGroup": "components/averageGroup/averageGroup",
+    "queue": "components/queue/queue",
+    "queueItem": "components/queue/queueItem",
+    "calendar": "components/calendar/calendar",
+    "LSDrawer": "components/LSDrawer/LSDrawer",
+    "STBox": "components/STBox/STBox",
+    "STItem": "components/STBox/STItem",
+    "tipser": "components/tipser/tipser",
+    "BSTbutton": "components/BSTbutton/button",
+    "BSTicon":"components/BSTicon/BSTicon"
+  },
+  "main": "index.js"
+}

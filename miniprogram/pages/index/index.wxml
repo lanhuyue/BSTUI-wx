@@ -1,0 +1,27 @@
+<!--pages/index/index.wxml-->
+<scroll-view
+  style="height:100%"
+  scroll-y
+  scroll-with-animation
+  bindscroll='onscroll'
+>
+  <Cheader
+    leftStyle='display:none'
+    boxStyle='background: {{headerBG}};color:#fff'
+    centerStyle='font-weight: normal'
+  >Components</Cheader>
+  <image src="{{imageDomain}}BSTCommonBannernew3.png" mode='aspectFill' style="height:430rpx"></image>
+  <queue
+    class="list"
+    type='equipartition'
+    itemStyle='width:46%'
+  >
+    <queueItem wx:for='{{componentsRouter}}' wx:key='c_{{index}}'>
+      <navigator class="c-item" url='/pages/index/components/{{item.name}}/index' >
+        <view class="c-item-title"><text>{{item.name}}</text></view>
+        <view class="c-item-content">{{item.introduce}}</view>
+      </navigator>
+    </queueItem>
+  </queue>
+</scroll-view>
+<!--pages/index/index.wxml-->

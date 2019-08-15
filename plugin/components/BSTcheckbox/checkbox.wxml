@@ -1,0 +1,11 @@
+<!--common/components/BSTcheckbox/BSTcheckbox.wxml-->
+<view class='checkbox' bindtap='onCheckBoxClick' style='{{componentStyle}}'>
+  <view  class='checkbox-icon {{disabled?"checkbox-icon-disabled":""}}' style='{{iconStyle+(iconWidth?";width:"+iconWidth:"")}}'>
+    <image class='image' src='{{checked?icon[0]:icon[1]}}' mode='aspectFit'></image>
+  </view>
+  <view 
+    class='checkbox-content' 
+    style='{{iconWidth?"padding-left:"+iconWidth+";margin-left:-"+iconWidth:""}}'
+  ><slot></slot></view>
+</view>
+ 

@@ -1,0 +1,8 @@
+<!--common/components/table/table.wxml-->
+<view class='table-box'>
+      <view class='table-row'>
+        <view>1</view>
+        <view>123456123456123456123456123456123456123456123456</view>
+        <view>1</view>
+      </view>
+</view>

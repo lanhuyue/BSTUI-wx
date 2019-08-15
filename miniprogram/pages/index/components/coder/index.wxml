@@ -1,0 +1,35 @@
+<!--pages/index/components/coder/index.wxml-->
+<view class="container">
+    <view class="card">
+      <view class="card-title">二维码</view>
+      <view class="card-content">
+          <coder value='{{value1}}' />
+          <Cinput
+            boxStyle='background-color:#fff'
+            value='{{inputV1}}'
+            clearColor='#d7eaef'
+            data-typeindex='1'
+            bindinput='oninput'
+          />
+          <button style="margin-top:20rpx" bindtap="createCoder" data-typeindex='1'>create</button>
+      </view>
+    </view>
+     <view class="card">
+      <view class="card-title">条形码（一维码）</view>
+      <view class="card-content">
+          <coder 
+            value='{{value2}}' 
+            type='1d'
+            encodingMethod='code128'
+          />
+          <Cinput
+            type='number'
+            value='{{inputV2}}'
+            clearColor='#d7eaef'
+            data-typeindex='2'
+            bindinput='oninput'
+          />
+          <button style="margin-top:20rpx"  bindtap="createCoder" data-typeindex='2'>create</button>
+      </view>
+    </view>
+</view>

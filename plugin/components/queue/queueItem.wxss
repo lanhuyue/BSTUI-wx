@@ -1,0 +1,23 @@
+/* plugin/components/queue/queueItem.wxss */
+.queue-item{
+  vertical-align: middle;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  padding: 10rpx;
+  transition: all 0.2s ease-out;
+}
+.list-item{
+  width: 100%;
+}
+
+.equipartition-item,.auto-item{
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+}

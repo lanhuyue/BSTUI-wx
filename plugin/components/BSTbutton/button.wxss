@@ -1,0 +1,42 @@
+/* plugin/components/BSTbutton/button.wxss */
+.BSTbutton{
+  text-align: center;
+  font-weight: 400;
+  font-family:'PingFangSC-Regular';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+   
+}
+.BSTbutton-wap{
+  display: flex
+}
+.BSTbutton-text{
+  /* padding: 0 10rpx */
+}
+/*类型primary*/
+.BST-button-primary{
+  background:linear-gradient(315deg,rgba(74,152,255,1) 0%,rgba(100,193,255,1) 100%);
+}
+.buttonShadow-primary{
+    box-shadow:0px 6px 10px 0px rgba(85,158,247,0.28);
+}
+.BSTbutton.button-disabled-primary{
+    background:rgba(207,228,249,1)!important;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+/*类型warning*/
+.BST-button-warning{
+  background:linear-gradient(315deg,rgba(251,87,42,1) 0%,rgba(255,139,82,1) 100%);
+}
+.buttonShadow-warning{
+  box-shadow:0px 12px 20px 0px rgba(247,125,85,0.5);
+}
+.BSTbutton.button-disabled-warning{
+    background:#F4DDCB!important;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+/*类型wireframe*/

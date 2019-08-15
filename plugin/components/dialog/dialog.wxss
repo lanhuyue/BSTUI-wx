@@ -1,0 +1,45 @@
+/* common/components/dialog/dialog.wxss */
+.dialog-footer{
+  height: 92rpx;
+  overflow: hidden;
+  border-radius: 0 0 8rpx 8rpx;
+  border-top: 1rpx solid #f1f1f1;
+}
+.dialog-footer .button{
+  width: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin: 0;
+  border: none;
+  background-color: white;
+  line-height: auto;
+ 
+}
+.dialog-footer .only-save{
+  width: 100%;
+  border: none;
+}
+.dialog-footer .button:active{
+  background-color: #f1f1f1;
+}
+.dialog-footer .button::after{
+  border: none !important;
+}
+.dialog-footer .button:nth-of-type(1){
+  border-right: 1rpx solid #f1f1f1;
+}
+.dialog-footer .button:nth-of-type(2){
+  color: #999;
+}
+.setContent-box{
+  display: block;
+  box-sizing: border-box;
+  padding: 30rpx 20rpx ;
+  line-height: 40rpx;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  max-height: 400px;
+  overflow: auto;
+}

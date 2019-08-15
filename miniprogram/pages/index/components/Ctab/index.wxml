@@ -1,0 +1,26 @@
+<!--miniprogram/pages/index/components/Ctab/index.wxml-->
+ <view class="container">
+    <Ctab 
+          current='{{0}}'
+          bindchange='ontabchange'
+          componentStyle=' background-color: white;border-radius: 8rpx'
+    >
+          <CtabItem 
+              title='司机'
+              icon='{{imageDomain}}cityline_siji.png'
+              itemStyle='padding:30rpx 0'
+          >
+              <view class="c-content">
+                我很老，你很清楚这是老司机的内容！
+              </view>
+          </CtabItem>
+          <CtabItem 
+              title='乘客' icon='{{imageDomain}}cityline_ren.png'
+          >
+              <view class="c-content">
+                不知不觉就上车了，这司机，真.老司机
+              </view>
+          </CtabItem>
+    </Ctab>
+ </view>
+ 

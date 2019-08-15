@@ -1,0 +1,34 @@
+/* common/components/coder/coder.wxss */
+.rich-text-box{
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.barcode-box{
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+  /* overflow-x: scroll; */
+}
+.barcode-text{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.barcode-tips{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.barcode-tips .barcode-tips-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+   color: #999999;
+   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

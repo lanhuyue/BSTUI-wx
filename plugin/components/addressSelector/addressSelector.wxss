@@ -1,0 +1,175 @@
+/* common/components/addressSelector/addressSelector.wxss */
+.noScrollBar::-webkit-scrollbar{width:0;height:0}
+.address-box,
+.address-search-box,
+.address-content-box,
+.address-search-box input,
+.address-checked-listbox,
+.address-search-listbox
+{
+  width: 100%;
+  height: 100%;
+}
+.address-box{
+  display: block;
+}
+.address-search-box{
+  padding: 15rpx 20rpx;
+  box-sizing: border-box;
+  white-space: nowrap;
+  /* background-color: #559EF7; */
+}
+.address-search-box input{
+  box-sizing: border-box;
+
+  display: inline-block;
+  border-radius: 8rpx;
+  padding-left: 80rpx; 
+  margin-left: -79rpx;
+  box-sizing: border-box;
+  border: 1px solid #dddcdc;
+  border-left: none;
+  background-color: white;
+  vertical-align: middle;
+}
+.address-search-box image{
+  display: inline-block;
+  width: 80rpx;
+  height: 100%;
+  background-color: white;
+  border-radius: 8rpx 0 0 8rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 5;
+  border: 1px solid #dddcdc;
+  border-right: none;
+  vertical-align: middle;
+}
+.address-content-box{
+  overflow: hidden;
+  /* background-color: rebeccapurple; */
+}
+.address-search-listbox{
+   overflow-y: auto;
+  overflow-x: hidden; 
+}
+.address-content-line{
+  padding: 15rpx 20rpx;
+}
+.address-content-line text{
+  display: block;
+  color: #707070;
+  padding-bottom: 20rpx;
+}
+.line-content{
+  text-align: justify;
+  margin-bottom: -40rpx;
+}
+ .line-content i{
+  display: inline-block;
+  width: 30%;
+  height:0;
+} 
+
+.line-content>view{
+  color: #3e3e3e;
+  width: 30%;
+  padding: 30rpx 0;
+  line-height: 20rpx;
+  text-align: center;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #dddcdc;
+  display: inline-block;
+  margin-bottom: 20rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis; 
+}
+.now-city{
+  width: 100%;
+  margin: 0;
+ 
+}
+.now-city>view{
+  width: 100%;
+  margin: 0;
+  padding: 30rpx 20rpx;
+  text-align: left;
+}
+.now-city text:nth-of-type(1){
+  margin-right: 20rpx;
+  color: black;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+.now-city text:nth-of-type(2){
+  color: #9b9b9b;
+}
+.address-keyboard{
+  text-align: justify;
+  padding: 20rpx;
+  margin-bottom: -40rpx;
+}
+.address-keyboard i{
+  display: inline-block;
+  width: 15%;
+  height:0;
+}
+.address-keyboard>view{
+  display: inline-block; 
+  padding: 30rpx 0;
+  line-height: 20rpx;
+  width: 15%;
+  background-color: #fbfbfb;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 16rpx;
+  border: 1px solid #dddcdc;
+}
+.address-keyboard .key-checked{
+  background-color: #c4d9f2;
+}
+.address-keyboard>view:active{
+  background-color: #eef8ff;
+}
+.line-content>view:active{
+  background-color:#eef8ff;
+}
+.checked-list-searchBox,.address-search-listbox{
+  background-color: white;
+  padding: 0rpx 20rpx;
+  line-height: 20rpx;
+}
+.checked-list-searchBox>view,.address-search-listbox>view{
+  padding:42rpx 20rpx 42rpx 40rpx;
+   border-bottom: 1rpx solid #dcdcdc;
+}
+.checked-list-searchBox>view:last-child,.address-search-listbox>view:last-child{
+  border: none;
+}
+.checked-list-searchBox>view:active,.address-search-listbox>view:active{
+  background-color: #eef8ff;
+}
+.checked-list-searchBox text:nth-of-type(1),.address-search-listbox text:nth-of-type(1){
+  padding-right:20rpx; 
+  vertical-align: top;
+}
+.checked-list-searchBox text:nth-of-type(2),.address-search-listbox text:nth-of-type(2){
+  color: #b9b9b9;
+   vertical-align: top;
+}
+.nbgc{
+  background-color: transparent;
+}
+.address-search-listbox .address-search-city::before{
+  content: "";
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  vertical-align: middle;
+  background-color: orange;
+  border-radius: 50%;
+  margin:0 10rpx 0 -30rpx;
+}

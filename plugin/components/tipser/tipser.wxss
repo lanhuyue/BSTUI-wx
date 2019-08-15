@@ -1,0 +1,35 @@
+/* common/components/tipser/tipser.wxss */
+.roll-tips{
+  padding: 10rpx 20rpx;
+  color: #E56D1D ;
+  font-size: 24rpx;
+  background-color: #FCEFC8; 
+  line-height: 30rpx;
+}
+.roll-tips:active{
+  background-color: rgb(230, 202, 191);
+}
+.roll-tips .tips-icon{
+  display: inline-block;
+  width: 30rpx;
+  height: 38rpx;
+  
+}
+.roll-tips image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.tips-content{
+  overflow: hidden;
+  width: 100%;
+}
+.tips-content-str{
+  white-space: nowrap;
+  position:relative;
+  z-index: 5;
+}
+.tips-content-str rich-text{
+  display: inline-block;
+  min-width: 100%;
+}

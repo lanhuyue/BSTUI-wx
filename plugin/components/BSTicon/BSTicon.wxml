@@ -1,0 +1,4 @@
+<!--plugin/components/BSTicon/BSTicon.wxml-->
+<text
+ 
+ class="BST-font {{className}}"style='color:{{color}};font-size:{{size}}rpx'></text>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "LSDrawer": "plugin://BSTCommon/LSDrawer",
+    "flexBox": "plugin://BSTCommon/flexBox"
+  },
+  "navigationBarTitleText": "LSDrawer"
+}

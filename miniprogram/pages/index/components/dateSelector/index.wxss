@@ -1,0 +1,5 @@
+/* pages/index/components/dateSelector/index.wxss */
+.d-label{
+  padding-bottom: 20rpx;
+  color: #999;
+}

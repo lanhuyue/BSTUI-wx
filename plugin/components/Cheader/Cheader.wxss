@@ -1,0 +1,51 @@
+/* plugin/components/Cheader/Cheader.wxss */
+.bst-nav-bar{
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+  transition: all 0.2s ease-out;
+}
+.bst-nav-bar .view{
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+   box-sizing: border-box;
+}
+.bst-nav-center{
+    width: 100%;
+    height: 100%;
+    line-height: 90rpx;
+    font-size: 34rpx;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+     box-sizing: border-box;
+  }
+  .bst-nav-left{
+    height: 100%;
+    position: relative;
+  }
+  .bst-nav-left .bst-nav-lefticon{
+    display: inline-block;
+    width: 26rpx;
+    height: 26rpx;
+    position: absolute;
+    left: 30rpx;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    vertical-align: middle;
+    border-left: 5rpx solid #333333;
+    border-bottom: 5rpx solid #333333;
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }

@@ -1,0 +1,2 @@
+/* miniprogram/pages/cssapi/cssapi.wxss */
+@import "../index/index.wxss";

@@ -1,0 +1,43 @@
+<!--common/components/tab/tab.wxml-->
+<view class='tab-box {{vertical?"tab-box-v":""}}' style="{{componentStyle}}">
+  <scroll-view
+      class='tab-title'
+      scroll-x='{{!vertical}}'
+      scroll-y='{{vertical}}'
+      scroll-with-animation
+      scroll-left='{{(checkedIndex-showItemHalfNum)*titleItemWidth}}'
+      scroll-top='{{}}'
+    >
+      <view 
+              class='title-button {{item.checked?"title-button-checked":""}}'
+              style='{{item.checked?titleCheckedStyle:""}};width:{{titleItemWidth}}px'
+              wx:for='{{titleData}}'
+              wx:key='_t_{{index}}'
+              id='item_{{index}}'
+              bindtap='onTitleClick'
+              data-index='{{index}}'
+              data-data='{{item.data}}'
+      >
+              <image  class='title-botton-cion' wx:if='{{item.icon}}' src='{{item.icon}}' mode='aspectFit'></image>
+              <text class='title-botton-text'>{{item.label}}</text>
+      </view>
+      <view class='title-line' style='width:{{titleItemWidth}}px;transform:translateX({{checkedIndex*titleItemWidth}}px)'></view>
+    </scroll-view>
+    <view 
+      wx:if='{{!vertical}}'
+      id='content'
+      class='tab-content'
+      bindtouchstart='onTouchStart'
+      bindtouchmove='onTouchMove'
+      bindtouchend='onTouchEnd'
+    >
+      <view class='tab-body' style='transform:translateX({{contentTranslateX}});transition:{{animation}}'><slot></slot></view>
+    </view>
+    <scroll-view
+      wx:if='{{vertical}}'
+      scroll-y
+      scroll-with-animation
+      scroll-top='{{}}'
+    ><slot></slot></scroll-view>
+</view>
+

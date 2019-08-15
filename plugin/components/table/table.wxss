@@ -1,0 +1,14 @@
+/* common/components/table/table.wxss */
+.table-box{
+  border-top: 1rpx solid #999;
+  border-left: 1rpx solid #999;
+}
+.table-box>.table-row{
+  width: 100%;
+  display: flex;
+  align-items:stretch;
+}
+.table-row>view{
+  border-right: 1rpx solid #999;
+  border-bottom: 1rpx solid #999;
+}

@@ -1,0 +1,13 @@
+<!--common/components/modal/modal.wxml-->
+<view class='modal-box'  style='{{componentStyle}};top:{{boxHidden?"1000%":0}}'>
+  <view animation="{{maskAnimation}}" class='modal-mask' style='{{maskStyle}}' bindtap='onMaskClick'></view>
+  <view animation="{{bodyAnimation}}" class='modal-body {{bodyClass}}'style="{{bodyStyle}}">
+    <view class='view modal-title' wx:if="{{title}}">
+      <slot name="title"></slot>
+    </view>
+    <view class='view modal-content' style="{{contentStyle}}"><slot></slot></view>
+    <view class='view modal-footer' style="{{footerStyle}}">
+      <slot name="footer"></slot>
+    </view>
+  </view>
+</view>

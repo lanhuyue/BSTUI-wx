@@ -1,0 +1,28 @@
+/* plugin/components/SDrawer/SDrawer.wxss */
+.s-drawer-content{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx;
+}
+.s-drawer-box{
+  /* height: 200rpx; */
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+.s-drawer-hidden{
+  height: 100%;
+  background-color: #ec4043;
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+}
+.s-drawer-hidden-btn{
+  box-sizing: border-box;
+}

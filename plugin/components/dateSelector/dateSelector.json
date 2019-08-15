@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "modal": "../modal/modal",
+    "flexBox": "../flexBox/flexBox",
+    "calendar": "../calendar/calendar"
+  }
+}

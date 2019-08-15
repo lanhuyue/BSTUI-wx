@@ -1,0 +1,7 @@
+/* plugin/components/scrollBox/scrollBox.wxss */
+.bst-scroll-box{
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}

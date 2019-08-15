@@ -1,0 +1,37 @@
+<!--plugin/components/Cslider/Cslider.wxml-->
+
+<view 
+ class='bst-slider-box'
+ bindtouchmove='boxTouchmove'
+>
+  <view
+   id='line'
+   class='bst-slider-content'
+   style='background-color:{{_unc}}'
+  >
+    <view
+      class='bst-slider-handle left-handle'
+      style='left:{{leftMaskWidth}};transition:{{leftA}}'
+      bindtouchstart='handleTouchstart'
+      bindtouchend='handleTouchend'
+      data-name='left'
+    ></view>
+    <view
+      wx:if='{{type=="range"}}'
+      class='bst-slider-handle right-handle'
+      style='right:{{rightMaskWidth}};transition:{{rightA}}'
+      bindtouchstart='handleTouchstart'
+      bindtouchend='handleTouchend'
+      data-name='right'
+    ></view>
+    <view 
+      class='bst-sliderMask-left' 
+      style='background-color:{{_c}};width:{{leftMaskWidth}};transition:{{leftA}}'
+    ></view>
+    <view 
+      wx:if='{{type=="range"}}' 
+      class='bst-sliderMask-right' 
+      style='background-color:{{_c}};width:{{rightMaskWidth}};transition:{{rightA}}'
+    ></view>
+  </view>
+</view>

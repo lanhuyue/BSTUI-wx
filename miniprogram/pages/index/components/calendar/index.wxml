@@ -1,0 +1,17 @@
+<!--miniprogram/pages/index/components/calendar/index.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="card-title">此组件为dateSelector的底层渲染组件</view>
+    <view class="card-content">
+        <view class="tips">特殊日期需开发者自行设置，插件不提供markerData数据</view>
+        <calendar
+            type='range'
+            monthShowNum='{{3}}'
+            markerData="{{markerData}}"
+            monthShowDate="2019-08-01"
+            bindchange='ondatechange'
+            bindcheckStart='oncheckStart'
+        />
+    </view>
+  </view>
+</view>

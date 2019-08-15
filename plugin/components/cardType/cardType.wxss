@@ -1,0 +1,14 @@
+/* common/components/cardType/cardtype.wxss */
+.dialog-list-box{
+  background-color: white;
+  text-align: center;
+}
+.dialog-list-box view{
+  box-sizing: border-box;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 30rpx 20rpx; 
+	font-size: 30rpx;
+}
+.dialog-list-box view:active{
+  background-color: #f1f1f1;
+}

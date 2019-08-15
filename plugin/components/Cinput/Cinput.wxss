@@ -1,0 +1,30 @@
+/* plugin/components/Cinput/Cinput.wxss */
+.c-input-box{
+  white-space: nowrap;
+  border: 1rpx solid #eee;
+  border-radius: 40rpx;
+}
+.c-icon-search,.c-icon-clear,.c-icon-img{
+  display: inline-block;
+  width: 46rpx;
+  height: 46rpx;
+  padding: 10rpx 20rpx;
+  vertical-align: middle;
+}
+.c-icon-search,.c-icon-img{
+  margin-right: -86rpx;
+  pointer-events: none;
+}
+
+.c-icon-clear{
+  margin-left: -86rpx;
+}
+.c-input{
+  display: inline-block;
+  width: 100%;
+  padding: 0 86rpx;
+  box-sizing: border-box;
+  height: 80rpx;
+  line-height: 80rpx;
+  vertical-align: middle;
+}

@@ -1,0 +1,20 @@
+{
+  "usingComponents": {
+    "coder": "plugin://BSTCommon/coder",
+    "modal": "plugin://BSTCommon/modal",
+    "averageGroup": "plugin://BSTCommon/averageGroup",
+    "calendar": "plugin://BSTCommon/calendar",
+    "dateSelector": "plugin://BSTCommon/dateSelector",
+    "STItem": "plugin://BSTCommon/STItem",
+    "STBox": "plugin://BSTCommon/STBox",
+    "LSDrawer": "plugin://BSTCommon/LSDrawer",
+    "Cslider": "plugin://BSTCommon/Cslider",
+    "Ccheckbox": "plugin://BSTCommon/Ccheckbox",
+    "Ctab": "plugin://BSTCommon/Ctab",
+    "Cinput": "plugin://BSTCommon/Cinput",
+    "Cheader": "plugin://BSTCommon/Cheader",
+    "CtabItem": "plugin://BSTCommon/CtabItem",
+    "CCgroup": "plugin://BSTCommon/CCgroup"
+  },
+  "navigationStyle": "custom"
+}

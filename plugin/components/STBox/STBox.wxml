@@ -1,0 +1,12 @@
+<!--plugin/components/scrollBox/scrollBox.wxml-->
+<scroll-view
+  id='stb'
+  class='bst-scroll-box'
+  style='{{boxStyle}}'
+  scroll-y
+  scroll-with-animation
+  scroll-top='{{scrollTop}}'
+  bindscroll='scrollFun'
+>
+<slot></slot>
+</scroll-view>

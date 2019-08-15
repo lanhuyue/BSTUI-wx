@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "drawer": "plugin://BSTCommon/drawer",
+    "flexBox": "plugin://BSTCommon/flexBox"
+  },
+  "navigationBarTitleText": "drawer"
+}

@@ -1,0 +1,21 @@
+/* common/components/flexBox/flexBox.wxss */
+ @import "../components.wxss";  
+.flex-box{
+  width: 100%;
+  white-space: nowrap;
+  /* height: 100%; */
+}
+.flex-box .view{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.flex-box-v{
+  height: 100%;
+}
+.flex-box-v .view{
+  display: block;
+}

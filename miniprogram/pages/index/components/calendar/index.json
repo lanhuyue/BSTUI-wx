@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "calendar": "plugin://BSTCommon/calendar"
+  },
+  "navigationBarTitleText": "calendar"
+}

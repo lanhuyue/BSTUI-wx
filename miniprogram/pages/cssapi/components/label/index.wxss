@@ -1,0 +1,18 @@
+/* miniprogram/pages/index/components/label/label.wxss */
+
+.label-title{
+  font-size:36rpx;
+  font-family:'SFUIText-Semibold';
+  font-weight:600;
+  color:rgba(74,74,74,1);
+  line-height:56rpx;
+  border-bottom: 1px solid #ddd;
+  padding: 8rpx;
+}
+.label-box{
+  padding: 20rpx;
+}
+.label-box >view{
+   margin: 30rpx; 
+}
+@import "../commonWxss/label.wxss";

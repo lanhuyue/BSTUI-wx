@@ -1,0 +1,12 @@
+<!--miniprogram/pages/index/components/label/label.wxml-->
+<view class="label-title">标签基础样式</view>
+<view class="label-box">
+  <view class="BTS-label-default BTS-label-default-bg1">标签</view>
+  <view class="BTS-label-default BTS-label-default-bg2">标签</view>
+  <view class="BTS-label-default BTS-label-default-bg3">标签</view>
+  <view class="BTS-label-default BTS-label-default-bg4">标签</view>
+  <view class="BTS-label-default BTS-label-default-bg5">标签</view>
+</view>
+<view class="label-box">
+  <text class="BTS-label-beveling">标签</text>
+</view>
