@@ -3,12 +3,14 @@
 
 # 插件使用
 
+## 小程序插件使用
+
 **app.json配置**
     
 ```json
     "plugins": {
         "ChiselUI": {
-          "version": "1.0.8",
+          "version": "1.0.9",
           "provider": "wx3f99db061dbc1dd3"
         }
     }, 
@@ -44,7 +46,14 @@
     } = requirePlugin('ChiselUI')；
     
     //js内可以引入插件提供的一些类或者方法，不使用也可以不引入或按需引入
+	
 ```
+
+## git代码下载使用
+
+> 如果需要使用最新版的功能可将github上代码中plugin复制到本地项目中直接以自定义组件的形式引用
+
+
 **演示demo（小程序：ChiselUI）**
 
 ![BSTUI](./BSTUIQR.jpg)
