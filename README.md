@@ -9,7 +9,7 @@
     
 ```json
     "plugins": {
-        "ChiselUI": {
+        "BSTCommon": {
           "version": "1.0.9",
           "provider": "wx3f99db061dbc1dd3"
         }
@@ -19,7 +19,7 @@
 ```
     <!--json内-->
    "usingComponents": {
-        "calendar": "plugin://ChiselUI/calendar"
+        "calendar": "plugin://BSTCommon/calendar"
     }
     <!--wxml内-->
     <calendar
@@ -43,7 +43,7 @@
           mergeCssStr,                     //合并css字符串、对象
           Displacementer,                  //坐标换算类
           initAryforJSON                   //初始化json数组
-    } = requirePlugin('ChiselUI')；
+    } = requirePlugin('BSTCommon')；
     
     //js内可以引入插件提供的一些类或者方法，不使用也可以不引入或按需引入
 	
@@ -679,7 +679,7 @@ default|item插入内容
       mergeCssStr,                     //合并css字符串、对象
       Displacementer,                  //坐标换算类
       initAryforJSON                   //初始化json数组
-  } = requirePlugin('ChiselUI')
+  } = requirePlugin('BSTCommon')
   
 ```
 ## InitDateObj：初始化时间类（class）
