@@ -3,6 +3,8 @@
 
 # 插件使用
 
+> 腾讯小程序插件文档地址 https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx3f99db061dbc1dd3&token=&lang=zh_CN
+
 ## 小程序插件使用
 
 **app.json配置**
