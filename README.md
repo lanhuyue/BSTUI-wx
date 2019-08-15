@@ -1,4 +1,4 @@
-> 各位开发者如若有自定义需求，可将需求以图文的形式发送至邮箱763915961@qq.com内；我们会定期筛选部分进行组件的拓展以及新组件的开放；谢谢各位开发者关注与使用，我们会一直不停完善！
+
 
 
 # 插件使用
@@ -7,7 +7,7 @@
     
 ```json
     "plugins": {
-        "BSTCommon": {
+        "ChiselUI": {
           "version": "1.0.8",
           "provider": "wx3f99db061dbc1dd3"
         }
@@ -17,7 +17,7 @@
 ```
     <!--json内-->
    "usingComponents": {
-        "calendar": "plugin://BSTCommon/calendar"
+        "calendar": "plugin://ChiselUI/calendar"
     }
     <!--wxml内-->
     <calendar
@@ -41,11 +41,11 @@
           mergeCssStr,                     //合并css字符串、对象
           Displacementer,                  //坐标换算类
           initAryforJSON                   //初始化json数组
-    } = requirePlugin('BSTCommon')；
+    } = requirePlugin('ChiselUI')；
     
     //js内可以引入插件提供的一些类或者方法，不使用也可以不引入或按需引入
 ```
-**演示demo（小程序：BSTUI）**
+**演示demo（小程序：ChiselUI）**
 
 ![BSTUI](./BSTUIQR.jpg)
     
@@ -670,7 +670,7 @@ default|item插入内容
       mergeCssStr,                     //合并css字符串、对象
       Displacementer,                  //坐标换算类
       initAryforJSON                   //初始化json数组
-  } = requirePlugin('BSTCommon')
+  } = requirePlugin('ChiselUI')
   
 ```
 ## InitDateObj：初始化时间类（class）
